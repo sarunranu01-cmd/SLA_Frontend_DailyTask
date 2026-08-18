@@ -131,3 +131,46 @@ const avatarUrl="";
 const fullName="";
 const find_User=;
 const isAdmin=;
+
+
+1. What is JavaScript?
+JavaScript is a programming language used to make websites interactive and dynamic. It can be used to create things like buttons, forms, animations, and other interactive features on a webpage.
+
+2. What is a variable?
+A variable is a name given to a place where we can store data in a program. The value stored in a variable can be used later in the program.
+
+let name = "John";
+name is the variable and "John" is its value.
+
+3. What is variable declaration?
+Variable declaration means creating a variable by giving it a name. In JavaScript, we can declare a variable using var, let, or const.
+Example:
+let age;
+4. What is initialization?
+Initialization means giving a value to a variable for the first time.
+Example:
+let age = 20;
+5. What is an assignment operator?
+The assignment operator is =It is used to give or assign a value to a variable.
+let name;
+name = "John";
+6. What are var, let and const?
+var, let, and const are keywords used to declare variables in JavaScript.
+var name = "John";
+let age = 20;
+const number=3466789;
+
+7. What is the difference between var let and const?
+var can be redeclared and its value can be changed.
+let cannot be redeclared in the same scope, but its value can be changed.
+const cannot be redeclared or reassigned after it has been initialized.
+		In modern JavaScript let and const are generally preferred over var.
+
+8. What is ES6?
+ES6 stands for ECMAScript 2015. It is a major version of JavaScript that was released in 2015. It introduced many new features such as let, const, arrow functions, classes, promises, template literals, and destructuring.
+
+9. What is a JavaScript Engine?
+A JavaScript Engine is a program that reads and executes JavaScript code. Different browsers use different JavaScript engines. For example, Chrome uses the V8 engine, while Firefox uses SpiderMonkey.
+
+10. What is V8?
+V8 is a JavaScript engine developed by Google. It is mainly used in Google Chrome and Node.js. Its job is to execute JavaScript code and make it run efficiently.
