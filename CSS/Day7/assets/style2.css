@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Dashboard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;  
+    margin: 20px auto;
+    max-width: 900px;
+
+}
+.card{
+    background-color: rgb(167, 235, 235);
+    width: 200px;
+    padding:10px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}

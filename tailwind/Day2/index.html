@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FutureWork — AI, Jobs, Skills & Career Learning Hub</title>
+  <meta name="description" content="Understand how AI is reshaping careers, discover high-demand emerging tech roles, and follow practical roadmaps and free curated courses.">
+
+  <!-- Tailwind CSS & Custom Styles -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- TOP PROMO BANNER -->
+  <div class="bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 text-white text-xs py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
+    <span class="bg-white/20 text-white px-2 py-0.5 rounded-full text-[11px] font-bold">2026 Guide</span>
+    <span>Explore verified AI career paths, technology radars, and free certified learning courses</span>
+    <a href="#courses" class="underline font-bold hover:text-blue-100 ml-1">Browse Courses →</a>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-2xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-sm shadow-blue-500/30">
+            <!-- Icon: Spark + Arrow -->
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xl font-extrabold tracking-tight text-slate-900 font-heading">
+              Future<span class="text-blue-600">Work</span>
+            </span>
+            <span class="hidden sm:inline-block ml-1.5 text-[10px] uppercase font-bold text-slate-500 tracking-wider bg-slate-100 px-1.5 py-0.5 rounded">Learning Hub</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+          <a href="#article-intro" class="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+            AI & Jobs
+          </a>
+          <a href="#jobs-created" class="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            New Roles
+          </a>
+          <a href="#fresher-guide" class="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            Fresher Roadmaps
+          </a>
+          <a href="#tech-radar" class="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            Tech Radar
+          </a>
+          <a href="#courses" class="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            Courses
+          </a>
+          <a href="#skill-check" class="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+            Skill Check
+          </a>
+        </nav>
+
+        <!-- Right Side CTA -->
+        <div class="flex items-center gap-3">
+          <a href="#courses" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-sm shadow-blue-500/20 transition-colors">
+            <span>Explore Courses</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" aria-label="Toggle Navigation">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-1">
+      <a href="#article-intro" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">AI & Jobs</a>
+      <a href="#jobs-created" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">New Emerging Roles</a>
+      <a href="#fresher-guide" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Fresher Roadmaps</a>
+      <a href="#tech-radar" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Tech Radar 2026</a>
+      <a href="#learning-paths" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Learning Paths</a>
+      <a href="#courses" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Browse Courses</a>
+      <a href="#skill-check" class="mobile-link block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-100">Skill Assessment</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="py-12 md:py-20 bg-gradient-to-b from-blue-50/60 via-white to-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-7">
+            
+            <!-- Eyebrow -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-bold mb-5">
+              <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+              THE FUTURE OF WORK · 2026 EDITION
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-5 font-heading">
+              Will AI Replace Human Jobs — <span class="text-blue-600">Or Create New Opportunities?</span>
+            </h1>
+
+            <!-- Supporting Paragraph -->
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8 max-w-2xl">
+              AI is transforming every industry. The real question isn't whether technology will change your job — it's whether you'll be ready when it does. Discover the in-demand skills, follow step-by-step career roadmaps, and learn with top verified courses.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-3.5 mb-8">
+              <a href="#courses" class="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-md shadow-blue-500/20 transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <span>Find Free Courses</span>
+              </a>
+              <a href="#fresher-guide" class="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-slate-700 bg-white hover:bg-slate-100 border border-slate-300 rounded-xl shadow-2xs transition-all">
+                <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                <span>View Learning Paths</span>
+              </a>
+            </div>
+
+            <!-- Meta Badges -->
+            <div class="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-500 pt-4 border-t border-slate-200">
+              <span class="flex items-center gap-1.5"><span class="text-blue-600 font-bold">✓</span> 10 min read</span>
+              <span class="flex items-center gap-1.5"><span class="text-blue-600 font-bold">✓</span> Career Guide</span>
+              <span class="flex items-center gap-1.5"><span class="text-emerald-600 font-bold">✓</span> Verified 2026 Insights</span>
+            </div>
+
+          </div>
+
+          <!-- Hero Right: Visual Feature Card -->
+          <div class="lg:col-span-5">
+            <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-lg relative">
+              <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-5">
+                <div class="flex items-center gap-2">
+                  <span class="p-2 rounded-lg bg-blue-50 text-blue-600 font-bold text-xs">AI & Human Synergy</span>
+                </div>
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">+97M New Roles</span>
+              </div>
+
+              <div class="space-y-3.5">
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0">⚡</div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900">AI Handles Velocity & Repetition</h4>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Automates boilerplate code, data extraction, and routine processing.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shrink-0">🧠</div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900">Humans Lead Strategy & Empathy</h4>
+                    <p class="text-[11px] text-slate-500 mt-0.5">High-context leadership, creativity, ethical decisions, and client trust.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-blue-50 border border-blue-200 flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shrink-0">🚀</div>
+                  <div>
+                    <h4 class="text-xs font-bold text-blue-900">The Modern Career Advantage</h4>
+                    <p class="text-[11px] text-blue-700 mt-0.5">Professionals who leverage AI tools outperform those who don't.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Metrics Grid -->
+              <div class="grid grid-cols-3 gap-2 mt-5 pt-4 border-t border-slate-100 text-center">
+                <div>
+                  <div class="text-base font-extrabold text-slate-900 font-heading">85M</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Tasks Evolving</div>
+                </div>
+                <div class="border-x border-slate-100">
+                  <div class="text-base font-extrabold text-blue-600 font-heading">97M+</div>
+                  <div class="text-[10px] text-slate-500 font-medium">New AI Jobs</div>
+                </div>
+                <div>
+                  <div class="text-base font-extrabold text-emerald-600 font-heading">100%</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Actionable</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL INTRODUCTION -->
+    <section id="article-intro" class="py-14 bg-white border-b border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-8">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Editorial Insight</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4 font-heading">
+            AI Isn't Just Replacing Jobs. It's Redesigning Them.
+          </h2>
+          <p class="text-base text-slate-600 leading-relaxed max-w-3xl mx-auto">
+            Throughout history, every major technological leap (steam engines, electricity, personal computers) created anxiety about the end of work. In reality, automation eliminated repetitive manual tasks while inventing whole new industries and high-paying careers.
+          </p>
+        </div>
+
+        <!-- Highlighted Quote Card -->
+        <div class="p-6 rounded-2xl bg-blue-50 border-l-4 border-blue-600 my-6">
+          <blockquote class="text-lg sm:text-xl font-bold text-blue-950 italic">
+            “The biggest career risk isn't AI. It's refusing to learn how work is changing.”
+          </blockquote>
+          <p class="text-xs text-blue-700 mt-2 font-medium">
+            — Future of Work Research & Economic Analysis Group
+          </p>
+        </div>
+
+        <!-- Credible Sources Banner -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600 font-medium">
+          <div><strong class="text-slate-900">Research Sources:</strong> World Economic Forum (WEF) · OECD Employment Outlook · International Labour Organization (ILO)</div>
+          <span class="text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded font-bold">Evidence-Based</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 1: AI STRENGTHS VS HUMAN STRENGTHS -->
+    <section class="py-14 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Capability Breakdown</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            Where AI Excels vs Where Humans Stay Essential
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          
+          <!-- AI Card -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg">⚡</div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 font-heading">What AI Does Best</h3>
+                <p class="text-xs text-slate-500">Computational speed & pattern matching</p>
+              </div>
+            </div>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
+              <li class="flex items-center gap-2"><span class="text-blue-600 font-bold">✓</span> <strong>Repetitive Tasks:</strong> 24/7 rule-based data processing</li>
+              <li class="flex items-center gap-2"><span class="text-blue-600 font-bold">✓</span> <strong>Massive Data Analysis:</strong> Finding patterns in millions of logs</li>
+              <li class="flex items-center gap-2"><span class="text-blue-600 font-bold">✓</span> <strong>Content Drafting:</strong> Instant first-pass text & translation</li>
+              <li class="flex items-center gap-2"><span class="text-blue-600 font-bold">✓</span> <strong>Code Autocomplete:</strong> Scaffolding boilerplate code & syntax</li>
+              <li class="flex items-center gap-2"><span class="text-blue-600 font-bold">✓</span> <strong>Tier-1 Support:</strong> Automated FAQ & instant customer answers</li>
+            </ul>
+          </div>
+
+          <!-- Human Card -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg">🧠</div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900 font-heading">What Humans Stay Strong At</h3>
+                <p class="text-xs text-slate-500">Empathy, judgment & strategic vision</p>
+              </div>
+            </div>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">★</span> <strong>Leadership & Inspiration:</strong> Motivating teams & managing people</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">★</span> <strong>Empathy & Emotional Intelligence:</strong> Understanding user feelings</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">★</span> <strong>Lateral Creativity:</strong> Combining unrelated domains into inventions</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">★</span> <strong>Strategic Judgment:</strong> Deciding what <em class="italic">should</em> be built</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">★</span> <strong>Trust & High-Stakes Negotiation:</strong> Closing client deals</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: JOBS MOST CHANGING (IMPACT GRID) -->
+    <section id="jobs-affected" class="py-14 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-3 py-1 rounded-full">Task Exposure Analysis</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            Which Roles Are Changing Fastest?
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Tasks within these roles are increasingly exposed to automation. Here is how professionals can level up their skills.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 card-hover flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-rose-100 text-rose-800 mb-2">High Exposure</span>
+              <h3 class="text-base font-bold text-slate-900">Data Entry & Clerical</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-3">Automated by OCR document parsers and database sync scripts.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs text-blue-700 font-medium">
+              <strong>Level-Up Skill:</strong> SQL & Data Quality Pipeline Auditing.
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 card-hover flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-rose-100 text-rose-800 mb-2">High Exposure</span>
+              <h3 class="text-base font-bold text-slate-900">Tier-1 Support</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-3">Handled by conversational knowledge bots answering FAQs instantly.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs text-blue-700 font-medium">
+              <strong>Level-Up Skill:</strong> Enterprise escalation & Customer Success.
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 card-hover flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-amber-100 text-amber-800 mb-2">Medium Exposure</span>
+              <h3 class="text-base font-bold text-slate-900">Routine Bookkeeping</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-3">Reconciliation and categorization automated by fintech AI.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs text-blue-700 font-medium">
+              <strong>Level-Up Skill:</strong> Strategic Financial Advisory & Planning.
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 card-hover flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-rose-100 text-rose-800 mb-2">High Exposure</span>
+              <h3 class="text-base font-bold text-slate-900">Basic Translation</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-3">Raw phrases translated near-instantly by neural models.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs text-blue-700 font-medium">
+              <strong>Level-Up Skill:</strong> Cultural localization & legal transcreation.
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 card-hover flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-amber-100 text-amber-800 mb-2">Medium Exposure</span>
+              <h3 class="text-base font-bold text-slate-900">Asset Resizing</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-3">Background removal and simple banners created via 1-click generative tools.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs text-blue-700 font-medium">
+              <strong>Level-Up Skill:</strong> Brand Art Direction & UX Strategy.
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 card-hover flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-amber-100 text-amber-800 mb-2">Medium Exposure</span>
+              <h3 class="text-base font-bold text-slate-900">Syntax Code Writing</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-3">Writing basic boilerplate loops assisted heavily by AI copilots.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs text-blue-700 font-medium">
+              <strong>Level-Up Skill:</strong> Distributed System Architecture & Security.
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 card-hover flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-rose-100 text-rose-800 mb-2">High Exposure</span>
+              <h3 class="text-base font-bold text-slate-900">Calendar Scheduling</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-3">Meeting transcription and email scheduling handled via agent integrations.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs text-blue-700 font-medium">
+              <strong>Level-Up Skill:</strong> Chief of Staff & Operations Management.
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-50 border border-slate-200 card-hover flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded text-[11px] font-bold bg-rose-100 text-rose-800 mb-2">High Exposure</span>
+              <h3 class="text-base font-bold text-slate-900">Generic SEO Articles</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-3">Formulaic summaries generated instantly by language models.</p>
+            </div>
+            <div class="pt-3 border-t border-slate-200 text-xs text-blue-700 font-medium">
+              <strong>Level-Up Skill:</strong> Investigative journalism & original data research.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: 12 NEW JOBS CREATED BY AI -->
+    <section id="jobs-created" class="py-14 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-100 px-3 py-1 rounded-full">New Career Frontiers</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            The 12 High-Demand Jobs Created by AI
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Explore required tools, entry difficulty, and roadmaps for each high-growth role.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Job 1 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-blue-50 text-blue-700">Engineering</span>
+                <span class="text-xs font-bold text-emerald-600">★ High Demand</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">1. AI Engineer</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Builds production web and mobile software powered by LLMs, vector search, and API agents.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Python</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">LangChain</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Vector DBs</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">APIs</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Intermediate</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 2 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-purple-50 text-purple-700">Machine Learning</span>
+                <span class="text-xs font-bold text-emerald-600">★ High Demand</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">2. ML Engineer</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Trains, fine-tunes (LoRA/QLoRA), evaluates, and deploys predictive and generative models.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">PyTorch</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Hugging Face</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">MLOps</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Advanced</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-indigo-50 text-indigo-700">Product</span>
+                <span class="text-xs font-bold text-emerald-600">★ High Demand</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">3. AI Product Manager</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Guides AI features from discovery to launch, defining evaluation metrics, UX, and unit costs.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Product Strategy</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Evals</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Figma</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Intermediate</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 4 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-emerald-50 text-emerald-700">No-Code / Ops</span>
+                <span class="text-xs font-bold text-emerald-600">★ Easy Entry</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">4. AI Automation Specialist</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Connects company software with intelligent webhooks to automate repetitive office tasks.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">n8n / Make</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Zapier</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Webhooks</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong class="text-emerald-700">Beginner Friendly</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 5 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-rose-50 text-rose-700">Security</span>
+                <span class="text-xs font-bold text-rose-600">Critical Need</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">5. AI Security Specialist</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Protects LLM applications from prompt injection, data leakage, and jailbreak exploits.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Red Teaming</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">OWASP LLM</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Guardrails</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Intermediate</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 6 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-sky-50 text-sky-700">Data Base</span>
+                <span class="text-xs font-bold text-emerald-600">★ High Demand</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">6. Data Engineer (AI Focus)</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Builds streaming data pipelines and high-speed vector embeddings for machine learning models.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">SQL</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Spark / dbt</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Intermediate</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 7 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-violet-50 text-violet-700">Research</span>
+                <span class="text-xs font-bold text-indigo-600">Frontier</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">7. AI Researcher</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Invents new mathematical architectures, reasoning algorithms, and alignment frameworks.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Linear Algebra</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">CUDA</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">PyTorch</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Advanced / PhD</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 8 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-amber-50 text-amber-700">Governance</span>
+                <span class="text-xs font-bold text-amber-700">Regulatory</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">8. AI Governance Specialist</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Audits models for algorithmic bias, EU AI Act compliance, and safety standards.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">EU AI Act</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Bias Auditing</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Risk Policy</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Intermediate</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 9 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-pink-50 text-pink-700">Design</span>
+                <span class="text-xs font-bold text-blue-600">Growing</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">9. AI UX Designer</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Designs intuitive interfaces for generative apps, confidence levels, and prompt interactions.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Figma</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">User Research</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Prompt UX</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong class="text-emerald-700">Beginner Friendly</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 10 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-blue-50 text-blue-700">Architecture</span>
+                <span class="text-xs font-bold text-emerald-600">High Salary</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">10. AI Solutions Architect</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Designs enterprise GPU cluster topologies, cloud scale, and data boundary privacy.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">AWS / GCP</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Kubernetes</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Terraform</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Advanced</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 11 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-teal-50 text-teal-700">Robotics</span>
+                <span class="text-xs font-bold text-indigo-600">Physical AI</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">11. Robotics Engineer</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Connects physical robotic actuators with Vision-Language-Action (VLA) neural models.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">ROS 2</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">C++ / Python</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Simulation</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Advanced</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+          <!-- Job 12 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-indigo-50 text-indigo-700">Consulting</span>
+                <span class="text-xs font-bold text-blue-600">Business Focus</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">12. AI Implementation Consultant</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Helps traditional companies adopt practical AI workflows and trains departmental teams.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 mb-4">
+                <span class="text-[11px] font-bold text-slate-700 block mb-1">Key Tools & Skills:</span>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">ROI Modeling</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Workshops</span>
+                  <span class="px-2 py-0.5 rounded bg-white text-[11px] border border-slate-200 font-mono">Advisory</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Difficulty: <strong>Intermediate</strong></span>
+              <a href="#courses" class="text-blue-600 font-bold hover:underline">Learn Skills →</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE 5-LEVEL AI-PROOF CAREER FRAMEWORK -->
+    <section class="py-14 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Resilience Blueprint</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            How to Make Your Career Resilient to AI
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            A 5-level tiered framework to compound your earning power and protect your career from automation.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-3.5">
+          
+          <div class="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm shrink-0">01</div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 font-heading">Level 01 — Digital Fundamentals</h3>
+              <p class="text-xs text-slate-600 mt-0.5">Internet protocols, cloud tools, digital collaboration, terminal/CLI basics, and cybersecurity hygiene.</p>
+            </div>
+          </div>
+
+          <div class="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0">02</div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 font-heading">Level 02 — AI Literacy & Daily Tooling</h3>
+              <p class="text-xs text-slate-600 mt-0.5">Generative AI prompts, hallucination auditing, API keys, and responsible AI ethics.</p>
+            </div>
+          </div>
+
+          <div class="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-sm shrink-0">03</div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 font-heading">Level 03 — Specialized Technical Skills</h3>
+              <p class="text-xs text-slate-600 mt-0.5">Choose a specialization: Python/TypeScript programming, SQL & data pipelines, or cloud architecture.</p>
+            </div>
+          </div>
+
+          <div class="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-sm shrink-0">04</div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 font-heading">Level 04 — High-Value Human Skills</h3>
+              <p class="text-xs text-slate-600 mt-0.5">Clear communication, critical thinking, creative problem solving, client empathy, and leadership.</p>
+            </div>
+          </div>
+
+          <div class="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center font-bold text-sm shrink-0">05</div>
+            <div>
+              <h3 class="text-sm font-bold text-slate-900 font-heading">Level 05 — Real-World Project Proof</h3>
+              <p class="text-xs text-slate-600 mt-0.5">Live GitHub repositories, deployed web demos, case studies, and interview preparation.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: FRESHER CAREER GUIDE (INTERACTIVE ROADMAP) -->
+    <section id="fresher-guide" class="py-14 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-8">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Interactive Career Navigator</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            I'm a Fresher. What Should I Learn?
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Click your starting background below to generate a tailored 6-month learning roadmap.
+          </p>
+        </div>
+
+        <!-- Persona Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-8 max-w-3xl mx-auto">
+          <button type="button" class="persona-tab active px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white border border-blue-600 transition-all cursor-pointer shadow-2xs" data-target="beginner">
+            Complete Beginner
+          </button>
+          <button type="button" class="persona-tab px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 transition-all cursor-pointer shadow-2xs" data-target="nontech">
+            Non-Technical Graduate
+          </button>
+          <button type="button" class="persona-tab px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 transition-all cursor-pointer shadow-2xs" data-target="csstudent">
+            Computer Science Student
+          </button>
+          <button type="button" class="persona-tab px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 transition-all cursor-pointer shadow-2xs" data-target="pro">
+            Working Professional
+          </button>
+        </div>
+
+        <!-- Dynamic Roadmap Content Card -->
+        <div class="max-w-4xl mx-auto p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 id="persona-title" class="text-lg font-bold text-slate-900 font-heading">Complete Beginner</h3>
+                <span id="persona-badge" class="px-2.5 py-0.5 rounded text-xs font-bold bg-blue-50 text-blue-700">Zero Coding Background</span>
+              </div>
+              <p id="persona-desc" class="text-xs text-slate-500 mt-1">Start with digital literacy, logical problem-solving, and basic Python before choosing a specialization.</p>
+            </div>
+            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-lg">12–15 hrs/wk</span>
+          </div>
+
+          <!-- Dynamic 6-Month Steps Container -->
+          <div id="persona-steps" class="space-y-3">
+            <!-- Injected via JavaScript -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: TECHNOLOGY RADAR 2026+ -->
+    <section id="tech-radar" class="py-14 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">Tech Trends & Radar</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            Technologies Worth Learning in 2026 and Beyond
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Categorized by practical industry momentum and research horizons.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Category 1: Learn Now -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+              <h3 class="text-base font-bold text-slate-900 font-heading">1. Learn Now (High Momentum)</h3>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Python & Modern SQL</strong> <span class="text-[11px] font-bold text-emerald-700">Essential</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Git, GitHub & CLI</strong> <span class="text-[11px] font-bold text-emerald-700">Standard</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Generative APIs & TypeScript</strong> <span class="text-[11px] font-bold text-emerald-700">High Growth</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Cloud Basics (AWS / GCP)</strong> <span class="text-[11px] font-bold text-emerald-700">Core</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Growing Fast -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-3 h-3 rounded-full bg-blue-500"></span>
+              <h3 class="text-base font-bold text-slate-900 font-heading">2. Growing Fast (Accelerating)</h3>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>AI Agents (LangChain / AutoGen)</strong> <span class="text-[11px] font-bold text-blue-700">+340% YoY</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Retrieval-Augmented Gen (RAG)</strong> <span class="text-[11px] font-bold text-blue-700">Critical</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>AI Security & Red Teaming</strong> <span class="text-[11px] font-bold text-blue-700">Top Priority</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>MLOps & Model Evaluation</strong> <span class="text-[11px] font-bold text-blue-700">In-Demand</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Watch Future -->
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="w-3 h-3 rounded-full bg-purple-500"></span>
+              <h3 class="text-base font-bold text-slate-900 font-heading">3. Watch Future (Frontier)</h3>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Humanoid Robotics & VLAs</strong> <span class="text-[11px] font-bold text-purple-700">2028–2032</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Spatial & Neuromorphic Tech</strong> <span class="text-[11px] font-bold text-purple-700">2030+</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Quantum Machine Learning</strong> <span class="text-[11px] font-bold text-purple-700">Research</span>
+              </li>
+              <li class="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <strong>Autonomous Multi-Agent Swarms</strong> <span class="text-[11px] font-bold text-purple-700">Emerging</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: 6 TECHNOLOGY LEARNING PATHS -->
+    <section id="learning-paths" class="py-14 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Curriculum Tracks</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            Choose Your Technology Learning Path
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Structured skill progressions from beginner to job-ready builder.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-blue-50 text-blue-700">Track 01</span>
+                <span class="text-xs text-slate-500">20–24 Weeks</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">AI & Machine Learning</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Neural networks, fine-tuning, embeddings, and real production LLM applications.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs font-mono text-slate-700 mb-4">
+                Python → Math → ML → PyTorch → LLMs & RAG → Agents
+              </div>
+            </div>
+            <a href="#courses" class="w-full py-2.5 text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors block">
+              Start AI Path →
+            </a>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-indigo-50 text-indigo-700">Track 02</span>
+                <span class="text-xs text-slate-500">16–20 Weeks</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">Full Stack Web Engineering</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Build modern, responsive, AI-integrated web applications with scalable backends.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs font-mono text-slate-700 mb-4">
+                HTML/CSS → JavaScript → React/Next.js → Node.js & SQL → AI APIs
+              </div>
+            </div>
+            <a href="#courses" class="w-full py-2.5 text-center text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl transition-colors block">
+              Start Developer Path →
+            </a>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-emerald-50 text-emerald-700">Track 03</span>
+                <span class="text-xs text-slate-500">14–18 Weeks</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">Data Analytics & BI</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Transform raw business data into automated reporting dashboards and business insights.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs font-mono text-slate-700 mb-4">
+                Excel → SQL Queries → Python Pandas → Power BI/Tableau → Portfolio
+              </div>
+            </div>
+            <a href="#courses" class="w-full py-2.5 text-center text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition-colors block">
+              Start Data Path →
+            </a>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-rose-50 text-rose-700">Track 04</span>
+                <span class="text-xs text-slate-500">18–22 Weeks</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">Cybersecurity & AI Defense</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Defend networks, cloud systems, and AI applications from adversarial security threats.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs font-mono text-slate-700 mb-4">
+                Networking → Linux → Security Basics → SOC Ops → AI Red Teaming
+              </div>
+            </div>
+            <a href="#courses" class="w-full py-2.5 text-center text-xs font-bold text-white bg-rose-600 hover:bg-rose-700 rounded-xl transition-colors block">
+              Start Security Path →
+            </a>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-sky-50 text-sky-700">Track 05</span>
+                <span class="text-xs text-slate-500">16–20 Weeks</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">Cloud & DevOps Engineering</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Deploy, automate, and orchestrate resilient cloud architectures and CI/CD pipelines.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs font-mono text-slate-700 mb-4">
+                Linux → AWS/GCP → Docker → Kubernetes → CI/CD & Terraform
+              </div>
+            </div>
+            <a href="#courses" class="w-full py-2.5 text-center text-xs font-bold text-white bg-sky-600 hover:bg-sky-700 rounded-xl transition-colors block">
+              Start Cloud Path →
+            </a>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs card-hover flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-amber-50 text-amber-700">Track 06</span>
+                <span class="text-xs text-slate-500">10–14 Weeks</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">AI Workflow Automation</h3>
+              <p class="text-xs text-slate-600 mt-1 mb-4">Connect SaaS platforms with automated AI logic pipelines without writing heavy code.</p>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs font-mono text-slate-700 mb-4">
+                Webhooks → n8n/Make → Prompt Chaining → Vector Search → Rollout
+              </div>
+            </div>
+            <a href="#courses" class="w-full py-2.5 text-center text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 rounded-xl transition-colors block">
+              Start Automation Path →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 8: HIGH VISIBILITY COURSE DISCOVERY CATALOG -->
+    <section id="courses" class="py-14 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-8">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">Curated Verified Catalog</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            Learn the Skills Top Companies Hire For
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Directly browse top-tier, verified, free and guided courses from Harvard, DeepLearning.AI, Google, Kaggle, and freeCodeCamp.
+          </p>
+        </div>
+
+        <!-- Course Filter Buttons (Interactive JS Tab) -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+          <button type="button" class="course-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white transition-all cursor-pointer shadow-2xs" data-category="all">
+            All Courses
+          </button>
+          <button type="button" class="course-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shadow-2xs" data-category="ai">
+            AI & Machine Learning
+          </button>
+          <button type="button" class="course-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shadow-2xs" data-category="web">
+            Web Engineering
+          </button>
+          <button type="button" class="course-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shadow-2xs" data-category="data">
+            Data & SQL
+          </button>
+          <button type="button" class="course-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all cursor-pointer shadow-2xs" data-category="cloud">
+            Cloud & Security
+          </button>
+        </div>
+
+        <!-- Course Cards Grid (Prominent & Highly Visible) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Course Card 1: CS50 -->
+          <div class="course-card p-6 rounded-2xl bg-white border-2 border-slate-200 hover:border-blue-500 shadow-sm card-hover flex flex-col justify-between" data-category="ai">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-red-100 text-red-800">Harvard CS50</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-100 text-emerald-800">100% Free / Audit</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading mb-1">Introduction to Computer Science</h3>
+              <p class="text-xs text-slate-500 mb-3 font-medium">Instructor: Prof. David J. Malan</p>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                The world's gold-standard foundational computing course covering algorithmic thinking, C, Python, SQL, and memory structures.
+              </p>
+              <div class="flex items-center gap-4 text-xs font-medium text-slate-500 mb-4 pb-3 border-b border-slate-100">
+                <span class="flex items-center gap-1">⏱ 10–12 Weeks</span>
+                <span class="flex items-center gap-1">🎯 Beginner</span>
+              </div>
+            </div>
+            <a href="https://cs50.harvard.edu/x" target="_blank" rel="noopener noreferrer" class="w-full py-3 text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-all shadow-xs flex items-center justify-center gap-1.5">
+              <span>View Free Course</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+
+          <!-- Course Card 2: DeepLearning.AI -->
+          <div class="course-card p-6 rounded-2xl bg-white border-2 border-slate-200 hover:border-blue-500 shadow-sm card-hover flex flex-col justify-between" data-category="ai">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-blue-100 text-blue-800">DeepLearning.AI</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-100 text-emerald-800">Free / Guided</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading mb-1">Generative AI with Large Language Models</h3>
+              <p class="text-xs text-slate-500 mb-3 font-medium">Instructor: Andrew Ng</p>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Master transformer mechanics, prompt engineering, fine-tuning, RAG retrieval pipelines, and LangChain agent tools.
+              </p>
+              <div class="flex items-center gap-4 text-xs font-medium text-slate-500 mb-4 pb-3 border-b border-slate-100">
+                <span class="flex items-center gap-1">⏱ 4–6 Weeks</span>
+                <span class="flex items-center gap-1">🎯 Intermediate</span>
+              </div>
+            </div>
+            <a href="https://www.deeplearning.ai" target="_blank" rel="noopener noreferrer" class="w-full py-3 text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-all shadow-xs flex items-center justify-center gap-1.5">
+              <span>View Free Course</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+
+          <!-- Course Card 3: The Odin Project / freeCodeCamp -->
+          <div class="course-card p-6 rounded-2xl bg-white border-2 border-slate-200 hover:border-blue-500 shadow-sm card-hover flex flex-col justify-between" data-category="web">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-indigo-100 text-indigo-800">The Odin Project</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-100 text-emerald-800">100% Free Open-Source</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading mb-1">Full Stack JavaScript & Web Apps</h3>
+              <p class="text-xs text-slate-500 mb-3 font-medium">Platform: The Odin Project</p>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Hands-on project-based curriculum teaching HTML, modern CSS, JavaScript, React, Node.js, and real deployed web apps.
+              </p>
+              <div class="flex items-center gap-4 text-xs font-medium text-slate-500 mb-4 pb-3 border-b border-slate-100">
+                <span class="flex items-center gap-1">⏱ Self-Paced</span>
+                <span class="flex items-center gap-1">🎯 Beginner Friendly</span>
+              </div>
+            </div>
+            <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer" class="w-full py-3 text-center text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl transition-all shadow-xs flex items-center justify-center gap-1.5">
+              <span>View Free Course</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+
+          <!-- Course Card 4: Kaggle Learn -->
+          <div class="course-card p-6 rounded-2xl bg-white border-2 border-slate-200 hover:border-blue-500 shadow-sm card-hover flex flex-col justify-between" data-category="data">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-sky-100 text-sky-800">Kaggle Learn</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-100 text-emerald-800">100% Free Interactive</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading mb-1">SQL & Python for Data Analytics</h3>
+              <p class="text-xs text-slate-500 mb-3 font-medium">Platform: Kaggle</p>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Interactive in-browser coding exercises mastering SQL queries, joins, aggregates, Pandas dataframes, and data cleaning.
+              </p>
+              <div class="flex items-center gap-4 text-xs font-medium text-slate-500 mb-4 pb-3 border-b border-slate-100">
+                <span class="flex items-center gap-1">⏱ 2–3 Weeks</span>
+                <span class="flex items-center gap-1">🎯 Beginner</span>
+              </div>
+            </div>
+            <a href="https://www.kaggle.com/learn" target="_blank" rel="noopener noreferrer" class="w-full py-3 text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-all shadow-xs flex items-center justify-center gap-1.5">
+              <span>View Free Course</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+
+          <!-- Course Card 5: Google Cloud -->
+          <div class="course-card p-6 rounded-2xl bg-white border-2 border-slate-200 hover:border-blue-500 shadow-sm card-hover flex flex-col justify-between" data-category="cloud">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-amber-100 text-amber-800">Google Cloud</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-blue-100 text-blue-800">Free / Certified</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading mb-1">Google Cloud Skills Boost & Vertex AI</h3>
+              <p class="text-xs text-slate-500 mb-3 font-medium">Platform: Google Training</p>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Learn cloud architecture, serverless APIs, container deployments, and building enterprise apps with Vertex AI.
+              </p>
+              <div class="flex items-center gap-4 text-xs font-medium text-slate-500 mb-4 pb-3 border-b border-slate-100">
+                <span class="flex items-center gap-1">⏱ 4–6 Weeks</span>
+                <span class="flex items-center gap-1">🎯 Intermediate</span>
+              </div>
+            </div>
+            <a href="https://www.cloudskillsboost.google" target="_blank" rel="noopener noreferrer" class="w-full py-3 text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-all shadow-xs flex items-center justify-center gap-1.5">
+              <span>View Free Course</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+
+          <!-- Course Card 6: TryHackMe Cyber -->
+          <div class="course-card p-6 rounded-2xl bg-white border-2 border-slate-200 hover:border-blue-500 shadow-sm card-hover flex flex-col justify-between" data-category="cloud">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-rose-100 text-rose-800">TryHackMe / OWASP</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-100 text-emerald-800">Free Hands-on Labs</span>
+              </div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading mb-1">Cybersecurity & AI Security Basics</h3>
+              <p class="text-xs text-slate-500 mb-3 font-medium">Platform: TryHackMe</p>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Hands-on practical browser labs exploring network security, Linux administration, and OWASP Top 10 for LLMs.
+              </p>
+              <div class="flex items-center gap-4 text-xs font-medium text-slate-500 mb-4 pb-3 border-b border-slate-100">
+                <span class="flex items-center gap-1">⏱ Hands-on Labs</span>
+                <span class="flex items-center gap-1">🎯 Beginner</span>
+              </div>
+            </div>
+            <a href="https://tryhackme.com" target="_blank" rel="noopener noreferrer" class="w-full py-3 text-center text-xs font-bold text-white bg-rose-600 hover:bg-rose-700 rounded-xl transition-all shadow-xs flex items-center justify-center gap-1.5">
+              <span>View Free Course</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 9: QUICK SKILL READINESS CHECK -->
+    <section id="skill-check" class="py-14 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-8">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Self-Assessment</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            How Future-Ready Are Your Skills?
+          </h2>
+          <p class="text-sm text-slate-600 mt-1">
+            Answer 6 quick questions to get an instant readiness evaluation (0–100).
+          </p>
+        </div>
+
+        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+          
+          <form id="skill-form" class="space-y-6">
+            
+            <div>
+              <label class="text-xs sm:text-sm font-bold text-slate-900 block mb-2">1. Do you use AI tools (ChatGPT/Claude/Copilot) daily for productivity?</label>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q1" value="0" required> Rarely
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q1" value="8"> Basic Search
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q1" value="16.6"> Complex Workflows
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="text-xs sm:text-sm font-bold text-slate-900 block mb-2">2. Can you write simple scripts in Python or JavaScript to automate tasks?</label>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q2" value="0" required> No Code
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q2" value="8"> Modify Code
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q2" value="16.6"> Build Full Scripts
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="text-xs sm:text-sm font-bold text-slate-900 block mb-2">3. Can you work with databases and SQL queries?</label>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q3" value="0" required> Spreadsheets only
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q3" value="8"> Basic SELECT/JOINs
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q3" value="16.6"> Advanced SQL & DBs
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="text-xs sm:text-sm font-bold text-slate-900 block mb-2">4. Do you use Git and GitHub for project version control?</label>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q4" value="0" required> Never
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q4" value="8"> Basic Commits
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q4" value="16.6"> CI/CD & Deploy
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="text-xs sm:text-sm font-bold text-slate-900 block mb-2">5. Have you built an original project and deployed it live?</label>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q5" value="0" required> None yet
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q5" value="8"> Followed tutorials
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q5" value="16.6"> Live Projects Deployed
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="text-xs sm:text-sm font-bold text-slate-900 block mb-2">6. Can you communicate technical solutions clearly to stakeholders?</label>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q6" value="0" required> Needs Work
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q6" value="8"> Moderate
+                </label>
+                <label class="p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="q6" value="16.6"> Highly Articulate
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-500/20 transition-all cursor-pointer text-sm">
+              Calculate My Readiness Score →
+            </button>
+
+          </form>
+
+          <!-- Result Container (Appears after submission) -->
+          <div id="skill-result" class="hidden text-center py-6">
+            <div id="skill-tier-badge" class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 mb-2">
+              Future-Ready
+            </div>
+            <div class="text-4xl sm:text-5xl font-extrabold text-blue-600 font-heading my-2">
+              <span id="skill-score-num">85/100</span>
+            </div>
+            <p id="skill-message" class="text-sm text-slate-600 max-w-md mx-auto mb-6 leading-relaxed">
+              Great work! You have strong fundamentals. Keep practicing live projects.
+            </p>
+            <div class="flex items-center justify-center gap-3">
+              <a href="#courses" class="px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-blue-600 hover:bg-blue-700">
+                Browse Recommended Courses
+              </a>
+              <button id="skill-reset-btn" type="button" class="px-4 py-2.5 rounded-xl text-xs font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 cursor-pointer">
+                Retake
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 10: 30 / 60 / 90 DAY ACTION PLAN -->
+    <section class="py-14 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Execution Blueprint</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            Don't Just Learn. Build. (30 / 60 / 90 Day Blueprint)
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            A step-by-step deliverable checklist to move from learning to being job-ready.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-800">Days 1–30</span>
+            <h3 class="text-base font-bold text-slate-900 mt-2 mb-3 font-heading">Phase 1: Master Fundamentals</h3>
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-start gap-2"><span>◻</span> Choose 1 track (AI, Web, or Data) and commit 10 hrs/wk</li>
+              <li class="flex items-start gap-2"><span>◻</span> Complete CS50 or basic Python coding track</li>
+              <li class="flex items-start gap-2"><span>◻</span> Set up GitHub account & write first automation script</li>
+            </ul>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-indigo-100 text-indigo-800">Days 31–60</span>
+            <h3 class="text-base font-bold text-slate-900 mt-2 mb-3 font-heading">Phase 2: Build Real Projects</h3>
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-start gap-2"><span>◻</span> Build Project 1: AI document query tool or scraper</li>
+              <li class="flex items-start gap-2"><span>◻</span> Build Project 2: Multi-step automation agent or web app</li>
+              <li class="flex items-start gap-2"><span>◻</span> Deploy both projects live on Vercel or Render</li>
+            </ul>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-emerald-100 text-emerald-800">Days 61–90</span>
+            <h3 class="text-base font-bold text-slate-900 mt-2 mb-3 font-heading">Phase 3: Portfolio & Job Applications</h3>
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-start gap-2"><span>◻</span> Launch a clean personal portfolio with live demo links</li>
+              <li class="flex items-start gap-2"><span>◻</span> Format resume with metric-driven project bullet points</li>
+              <li class="flex items-start gap-2"><span>◻</span> Send 5 high-conviction job applications weekly</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 11: HUMAN + AI SYNERGY STATEMENT -->
+    <section class="py-14 bg-blue-900 text-white text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="text-xs uppercase font-bold tracking-widest text-sky-300 block mb-2">Core Conclusion</span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-4 font-heading">
+          The future isn't Human vs AI.
+        </h3>
+        <p class="text-xl sm:text-2xl font-bold text-sky-200">
+          It's Humans <span class="underline decoration-sky-400">with AI</span> versus Humans <span class="underline decoration-rose-400">without AI</span>.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 12: 2026-2040+ TIMELINE -->
+    <section class="py-14 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Macro Horizon</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-2 font-heading">
+            Macro Timeline: 2026 to 2040+
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <div class="p-5 rounded-xl bg-white border border-slate-200">
+            <span class="text-xl font-extrabold text-blue-600 font-heading">2026</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-1 mb-1.5">Copilots & Multimodal AI</h4>
+            <p class="text-xs text-slate-600">AI coding assistants, knowledge search, and RAG pipelines in production.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-white border border-slate-200">
+            <span class="text-xl font-extrabold text-indigo-600 font-heading">2030</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-1 mb-1.5">Autonomous AI Agents</h4>
+            <p class="text-xs text-slate-600">Teams of autonomous agents executing multi-step business operations.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-white border border-slate-200">
+            <span class="text-xl font-extrabold text-purple-600 font-heading">2035</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-1 mb-1.5">Robotics & Spatial OS</h4>
+            <p class="text-xs text-slate-600">Humanoid robots in warehousing; spatial mixed reality computing.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-white border border-slate-200">
+            <span class="text-xl font-extrabold text-sky-600 font-heading">2040+</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-1 mb-1.5">Quantum & Neural AI</h4>
+            <p class="text-xs text-slate-600">Scientific discoveries accelerated by quantum machine intelligence.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 13: NEWSLETTER -->
+    <section class="py-14 bg-slate-900 text-white text-center">
+      <div class="max-w-xl mx-auto px-4 sm:px-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Weekly Career Dispatch</span>
+        <h2 class="text-2xl font-bold mt-1 mb-2 font-heading">Stay Ahead of the Curve</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mb-6">Practical insights on emerging AI skills, hiring trends, and free course tracks.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to FutureWork!');" class="flex flex-col sm:flex-row gap-2">
+          <input type="email" placeholder="Enter your email address..." required class="w-full px-4 py-2.5 text-xs bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-hidden focus:border-blue-500">
+          <button type="submit" class="px-5 py-2.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-lg shrink-0 cursor-pointer">
+            Subscribe Free
+          </button>
+        </form>
+        <p class="text-[11px] text-slate-500 mt-3">Zero spam. Unsubscribe anytime.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 py-10 text-slate-600 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded bg-blue-600 flex items-center justify-center text-white font-bold text-xs">FW</div>
+        <span class="font-bold text-slate-900">FutureWork Hub</span>
+        <span class="text-slate-400">· © 2026 All Rights Reserved</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#article-intro" class="hover:text-blue-600">AI & Jobs</a>
+        <a href="#jobs-created" class="hover:text-blue-600">New Roles</a>
+        <a href="#fresher-guide" class="hover:text-blue-600">Roadmaps</a>
+        <a href="#courses" class="hover:text-blue-600 font-bold text-blue-600">Free Courses</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MINIMAL JAVASCRIPT ONLY FOR ESSENTIAL INTERACTIVE AREAS -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

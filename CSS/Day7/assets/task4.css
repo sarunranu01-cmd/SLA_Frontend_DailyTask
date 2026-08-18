@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1000px;
+}
+
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    background-color: rgb(155, 155, 254);
+    width: 200px;
+    padding: 20px;
+    border:2px solid black;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    margin:30px auto;
+}
+h1{
+    text-align: center;
+}

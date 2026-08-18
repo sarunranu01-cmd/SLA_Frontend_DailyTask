@@ -1,0 +1,16 @@
+*{
+    margin: 10px;;
+    padding: 2px;
+}
+
+div{
+    background-color:black;
+    color:white;
+    width: 900px;
+    height: 200px;
+    text-align:center;
+}
+.h_one{
+    color:red ;
+    font-size:60px;
+}

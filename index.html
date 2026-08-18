@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Frontend Assessment</title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+
+
+        .container {
+            background: linear-gradient(135deg,#ffd700,#ffb700);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 50px;
+
+            min-height: 90px;
+        }
+
+
+        .logo h1 {
+            font-size: 28px;
+            color: #222;
+        }
+
+
+        .navitem {
+            display: flex;
+            gap: 30px;
+        }
+
+
+        .navitem a {
+            color: #222;
+            text-decoration: none;
+
+            font-size: 17px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .navitem a:hover {
+            color: white;
+        }
+
+
+        .hero {
+            text-align: center;
+
+            padding: 65px 20px 35px;
+        }
+
+
+        .hero h2 {
+            font-size: 42px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .hero p {
+            color: #666;
+
+            font-size: 18px;
+        }
+
+        .tasks {
+            max-width: 1150px;
+
+            margin: 20px auto 70px;
+
+            padding: 20px;
+        }
+
+
+        .card-container {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 30px;
+        }
+
+
+        .card {
+
+            width: 100%;
+
+            min-height: 240px;
+
+            background: white;
+
+            border-radius: 22px;
+
+            overflow: hidden;
+
+            display: flex;
+
+            align-items: stretch;
+
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.08);
+
+            border: 1px solid #eeeeee;
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease;
+        }
+
+
+        .card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 20px 45px rgba(0, 0, 0, 0.14);
+        }
+
+        .card-image {
+
+            width: 40%;
+
+            min-height: 280px;
+
+            padding: 20px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+
+        .card-image {
+
+            width: 350px;
+
+            height: 210px;
+
+            object-fit: contain;
+
+            display: block;
+
+            transition:
+                transform 0.5s ease;
+
+        }
+
+
+        .card:hover .card-image img {
+
+            transform: scale(1.06);
+        }
+
+
+
+        .card-content {
+
+            flex: 1;
+
+            padding: 35px 40px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: flex-start;
+        }
+
+
+        .card-label {
+
+            display: inline-block;
+
+            padding: 7px 14px;
+
+            border-radius: 30px;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 13px;
+        }
+
+
+        .html-label {
+
+            background: #ffe1d4;
+
+            color: #e44d26;
+        }
+
+
+        .css-label {
+
+            background: #dceeff;
+
+            color: #1674d1;
+        }
+
+
+        .bootstrap-label {
+
+            background: #e8dcff;
+
+            color: #663c9b;
+        }
+
+
+
+        .card-content h3 {
+
+            font-size: 32px;
+
+            margin-bottom: 12px;
+
+            color: #222;
+        }
+
+
+
+        .card-content p {
+
+            max-width: 550px;
+
+            color: #666;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            margin-bottom: 25px;
+        }
+
+
+
+
+        .task-btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            padding: 13px 24px;
+
+            border-radius: 9px;
+
+            background: #222;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+        }
+
+
+        .task-btn span {
+
+            font-size: 18px;
+
+            transition: 0.3s;
+        }
+
+
+        .task-btn:hover {
+
+            background: #ffd700;
+
+            color: #222;
+        }
+
+
+        .task-btn:hover span {
+
+            transform: translateX(5px);
+        }
+        .card-number {
+
+            position: absolute;
+        }
+
+
+
+        #about {
+
+            background: white;
+
+            text-align: center;
+
+            padding: 70px 20px;
+        }
+
+
+        #about h2 {
+
+            font-size: 36px;
+
+            margin-bottom: 15px;
+        }
+
+
+        #about p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            color: #666;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+        }
+
+
+        footer {
+
+            text-align: center;
+
+            background: #222;
+
+            color: white;
+
+            padding: 25px;
+
+        }
+
+        @media (max-width: 800px) {
+
+            .container {
+
+                padding: 20px 30px;
+            }
+
+
+            .card {
+
+                min-height: 230px;
+            }
+
+
+            .card-image {
+
+                width: 38%;
+
+                min-height: 240px;
+
+                padding: 15px;
+            }
+
+
+            .card-image img {
+
+                height: 210px;
+            }
+
+
+            .card-content {
+
+                padding: 25px 30px;
+            }
+
+
+            .card-content h3 {
+
+                font-size: 28px;
+            }
+
+        }
+
+
+
+
+        @media (max-width: 600px) {
+
+
+
+            .container {
+
+                flex-direction: column;
+
+                gap: 20px;
+
+                padding: 20px;
+            }
+
+
+            .logo h1 {
+
+                font-size: 25px;
+            }
+
+
+            .navitem {
+
+                gap: 18px;
+            }
+
+
+            .navitem a {
+
+                font-size: 15px;
+            }
+
+
+
+
+            .hero {
+
+                padding: 45px 20px 25px;
+            }
+
+
+            .hero h2 {
+
+                font-size: 30px;
+            }
+
+
+            .hero p {
+
+                font-size: 16px;
+
+                line-height: 1.5;
+            }
+
+
+
+
+            .tasks {
+
+                padding: 15px;
+
+                margin-top: 10px;
+            }
+
+
+            .card-container {
+
+                gap: 25px;
+            }
+
+
+            .card {
+
+                flex-direction: column;
+
+                min-height: auto;
+            }
+
+
+            .card-image {
+
+                width: 100%;
+
+                height: 250px;
+
+                min-height: 250px;
+            }
+
+
+            .card-image img {
+
+                width: 100%;
+
+                height: 230px;
+            }
+
+
+            .card-content {
+
+                width: 100%;
+
+                padding: 25px;
+
+                align-items: center;
+
+                text-align: center;
+            }
+
+
+            .card-content h3 {
+
+                font-size: 27px;
+            }
+
+
+            .card-content p {
+
+                font-size: 15px;
+
+                margin-bottom: 22px;
+            }
+
+
+            .task-btn {
+
+                width: 100%;
+            }
+
+            #about {
+
+                padding: 55px 20px;
+            }
+
+
+            #about h2 {
+
+                font-size: 30px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+
+    <header>
+
+        <div class="container">
+
+
+            <div class="logo">
+
+                <h1>
+                    My Assessment
+                </h1>
+
+            </div>
+
+
+            <nav>
+
+                <div class="navitem">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="#tasks">
+                        Tasks
+                    </a>
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+    <section class="hero">
+
+        <h2>
+            Frontend Development Tasks
+        </h2>
+
+        <p>
+            Choose a technology and explore the tasks
+        </p>
+
+    </section>
+
+    <section id="tasks" class="tasks">
+
+        <div class="card-container">
+
+            <div class="card">
+
+
+                <div class="card-image html-image">
+
+                    <img src="../front_end_class/task folder/assets/1.png" alt="HTML Task">
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <span class="card-label html-label">
+                        STRUCTURE
+                    </span>
+
+                    <h3>
+                        HTML05
+                    </h3>
+
+                    <p>
+                        Practice HTML elements, forms,
+                        tables, links, semantic tags and
+                        build the structure of modern
+                        web pages.
+                    </p>
+
+                    <a href="../front_end_class/task folder/alltask.html" target="_blank" class="task-btn">
+
+                        Go to HTML Task
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+
+                <div class="card-image css-image">
+
+                    <img src="../front_end_class/task folder/assets/1.png" alt="CSS Task">
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <span class="card-label css-label">
+                        DESIGN
+                    </span>
+
+                    <h3>
+                        CSS3
+                    </h3>
+
+                    <p>
+                        Practice Flexbox, Grid, colors,
+                        typography, animations and
+                        responsive website layouts.
+                    </p>
+
+                    <a href="D:\front_end_class\task folder\cssweb.html" target="_blank" class="task-btn">
+
+                        Go to CSS Task
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+
+                <div class="card-image bootstrap-image">
+
+                    <img src="../front_end_class/task folder/assets/1.png" alt="Bootstrap Task">
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <span class="card-label bootstrap-label">
+                        FRAMEWORK
+                    </span>
+
+                    <h3>
+                        Bootstrap
+                    </h3>
+
+                    <p>
+                        Practice Bootstrap grids, cards,
+                        buttons, navigation bars and
+                        responsive components.
+                    </p>
+
+                    <a href="file:///D:/front_end_class/task%20folder/bootstraptailwind.html" target="_blank" class="task-btn">
+
+                        Go to Bootstrap Task
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <h2>
+            About
+        </h2>
+
+        <p>
+            This website contains my frontend
+            development assessment tasks. Choose
+            a technology above and start practicing
+            your frontend development skills.
+        </p>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 My Frontend Assessment
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

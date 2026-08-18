@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>Student Registration Form</h1>
+        </header>
+    <hr>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="Name">Name</label></td><td>:</td>
+                <td><input type="text" name="Name" id="Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td><td>:</td>
+                <td><input type="email" name="Email" id="Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="PH_namber">Namber</label></td><td>:</td>
+                <td><input type="namber" name="PH_namber" id="PH_namber" minlength="10" maxlength="10"></td>
+            </tr>
+             <tr>
+                <td><label for="Age">Age</label></td><td>:</td>
+                <td><input type="number" id="Age" min="1" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td><td>:</td>
+                <td><input type="radio" value="Gender" name="Gender">Male  <input type="radio" value="Gender" name="Gender">FeMale  <input type="radio" value="Gender" name="Gender">Other</td>
+                
+            </tr>
+            <tr>
+                <td><label for="skill">Skill</label></td><td>:</td>
+                <td>
+                    <input type="checkbox" name="Skill">java
+                    <input type="checkbox" name="Skill">python
+                    <input type="checkbox" name="Skill">react
+                    <input type="checkbox" name="skill">java script
+                </td>
+            
+            </tr>
+            <tr>
+                <td><label for="Course">Course Selection</label></td><td>:</td>
+            
+            <td><select name="Course">
+                <option value="">Select Course</option>
+                    <option value="full stack">full stack</option>
+                    <option value="frontend development">frontend development</option>
+                    <option value="digital marketing">digital marketing</option>
+
+                </select></td>  
+                
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td><td>:</td>
+                <td><textarea name="address" id="address"></textarea></td>
+            </tr>
+          
+             <tr>
+                <td><label for="image">Upload imge</label></td><td>:</td>
+                <td><input type="file" id="image"></td>
+            </tr>
+            <tr>
+            <td></td><td></td>
+            <td><input type="submit" value="submit"> <input type="reset" value="reset"></td>
+            </tr>
+
+
+
+        </table>
+    </form>
+    </center>
+    <br>
+    <br>
+    <center>
+    <table border="2">
+        <thead>
+            <th>SLA ID</th>
+            <th>Student Name</th>
+            <th>Course</th>
+            <th>Email</th>
+            <th>Mobile NUmber</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>arun</td>
+                <td>full stack</td>
+                <td>fghkjf@gmail.com</td>
+                <td>2454678542</td>
+                <td>Approved</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>rahul</td>
+                <td>full stack</td>
+                <td>rahul@gmail.com</td>
+                <td>2444678542</td>
+                <td>Approved</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>kiran</td>
+                <td>full stack</td>
+                <td>kiran@gmail.com</td>
+                <td>5454678542</td>
+                <td>Approved</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>mukund</td>
+                <td>full stack</td>
+                <td>mukund@gmail.com</td>
+                <td>2464678542</td>
+                <td>Approved</td>
+            </tr>
+            <tr>
+                <td>105<td>
+                <td>vijay</td>
+                <td>full stack</td>
+                <td>vijay@gmail.com</td>
+                <td>2954678542</td>
+                <td>Approved</td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+
+</body>
+</html>

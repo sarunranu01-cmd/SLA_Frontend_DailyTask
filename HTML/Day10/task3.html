@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Patient Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Patient Registration Form</h1>
+    </header>
+    <form>
+        <table>
+            <tr>
+                <td><label for="p_id">Patient ID</label></td><td>:</td>
+                <td><input type="text" id="p_id" name="p_id" required></td>
+            </tr>
+            <tr>
+                <td><label for="Patientname">Patient Name</label></td><td>:</td>
+            <td><input type="text" id="Patientname" name="Patientname" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td><td>:</td>
+                <td><input type="number" id="age" name="age"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td><td>:</td>
+                <td><input type="radio" value="gender" name="gender"> Male
+                    <input type="radio" value="gender" name="gender"> Female
+                    <input type="radio" value="gender" name="gender"> Other
+                </td>
+            </tr>
+            <tr>
+                <td><label for="bd">Blood Group</label></td><td>:</td>
+                <td>
+                    <select id="bd" name="bd" required>
+                        <option>Select Blood Group</option>
+                        <option>o+</option>
+                        <option>A-</option>
+                        <option>b+</option>
+                        <option>b-</option>
+                        <option>ab</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="doctor">Doctor</label></td><td>:</td>
+                <td>
+                    <select id="doctor" name="doctor">
+                        <option>Select Doctor</option>
+                        <option>kiran</option>
+                        <option>Arun</option>
+                        <option>Arjun</option>
+                        <option>shakthi</option>
+                        <option>sivan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="A_date">Appointment Date</label></td><td>:</td>
+                <td><input type="date" id="A_date" name="A_date"></td>
+            </tr>
+            <tr>
+                <td><label>Symptoms</label></td><td>:</td>
+                <td><textarea id="symptoms" name="symptoms"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="M_report">Medical Report Upload</label></td>
+                <td>:</td>
+                <td><input type="file" id="M_report" name="M_report" required></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="submit"><input type="reset" value="Reset"></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <br><br>
+
+    <table border="2">
+
+        <tr>
+            <th>Patient ID</th>
+            <th>Patient Name</th>
+            <th>Doctor</th>
+            <th>Blood Group</th>
+            <th>Appointment Date</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>P101</td>
+            <td>kiran</td>
+            <td>Dr.Kiran</td>
+            <td>O+</td>
+            <td>20-07-2026</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td>P102</td>
+            <td>prakesh</td>
+            <td>Dr.arun</td>
+            <td>A+</td>
+            <td>24-07-2026</td>
+            <td>Pending</td>
+        </tr>
+
+        <tr>
+            <td>P103</td>
+            <td>Arun</td>
+            <td>Dr.Arjun</td>
+            <td>B+</td>
+            <td>15-07-2026</td>
+            <td>Completed</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
+    
+    
+</body>
+</html>
+    

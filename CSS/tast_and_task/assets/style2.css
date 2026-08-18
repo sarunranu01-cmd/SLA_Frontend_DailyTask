@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(226, 14, 14, 0.449);
+}
+.card{
+    background-color: rgba(63, 63, 247, 0.858);
+    color: blanchedalmond;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    border: black 3px solid;
+    border-radius: 10px;
+
+
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>Employee Registration & Employee Report</h1>
+        </header>
+    <hr>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="EmployeeId">Employee ID</label></td><td>:</td>
+                <td><input type="number" name="EmployeeId" id="EmployeeId" required minlength="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td><label for="EmployeeName">EmployeeName</label></td><td>:</td>
+                <td><input type="text" name="EmployeeName" id="EmployeeName" required></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td><td>:</td>
+                <td><input type="email" name="Email" id="Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="PH_namber">Namber</label></td><td>:</td>
+                <td><input type="namber" name="PH_namber" id="PH_namber" minlength="10" maxlength="10"></td>
+            </tr>
+             <tr>
+                <td><label for="Department">Department</label></td><td>:</td>
+                <td>
+                    <input type="checkbox" name="Department">HR
+                    <input type="checkbox" name="Department">marketing
+                    <input type="checkbox" name="Department">development
+                    <input type="checkbox" name="Department">data analyst
+                </td>
+            <tr>
+                <td><label for="Experience">Experience</label></td><td>:</td>
+                <td><input type="number" id="Experience" name="Experience" minlength="2" maxlength="20"></td>
+            </tr>
+            
+            </tr>
+            <tr>
+                <td><label for="salary">Salary</label></td><td>:</td>
+                <td><input type="number" id="salary"></td>
+            </tr>
+            <tr>
+                <td><label for="skill">Skill</label></td><td>:</td>
+                <td>
+                    <input type="checkbox" name="Skill">java
+                    <input type="checkbox" name="Skill">python
+                    <input type="checkbox" name="Skill">react
+                    <input type="checkbox" name="skill">java script
+                </td>
+            
+            </tr>
+            
+             <tr>
+                <td><label for="resume">Resume Upload</label></td><td>:</td>
+                <td><input type="file" id="resume"></td>
+            </tr>
+            <tr>
+            <td></td><td></td>
+            <td><input type="submit" value="submit"> <input type="reset" value="reset"></td>
+            </tr>
+
+
+
+        </table>
+    </form>
+    </center>
+    <br>
+    <br>
+    <center>
+    <table border="2">
+        <thead>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Department</th>
+            <th>Experience</th>
+            <th>Salary</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E101</td>
+                <td>arun</td>
+                <td>development</td>
+                <td>5</td>
+                <td>50000</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>E102</td>
+                <td>rahul</td>
+                <td>marketing</td>
+                <td>4</td>
+                <td>40000</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>kiran</td>
+                <td>HR</td>
+                <td>5</td>
+                <td>50000</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>mukund</td>
+                <td>HR</td>
+                <td>7</td>
+                <td>80000</td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.box1{
+    background-color: red;
+    color:black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+
+
+}
+
+.box2{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    left: 60px;
+}

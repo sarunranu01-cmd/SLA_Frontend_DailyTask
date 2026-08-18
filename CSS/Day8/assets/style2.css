@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+table{
+    background-color: rgb(199, 223, 164);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border: none;
+    border: solid black 2px;
+
+    
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:focus{
+    background-color: rgb(181, 181, 223);
+    border: rgb(255, 60, 0) 1px solid;
+    outline: none;
+
+   
+
+}
+

@@ -1,0 +1,25 @@
+3.List out the Flex and dispaly properties
+DISPLAY PROPERTIES
+	1.display: block
+	2.display: inline
+	3.display: inline-block
+	4.display: flex
+	5.display: inline-flex
+	6.display: grid
+	7.display: inline-grid
+	8.display: none
+FLEX CONTAINER PROPERTIES
+	1.display: flex
+	2.flex-direction
+	3.justify-content
+	4.align-items
+	5.align-content
+	6.flex-wrap
+	7.gap
+FLEX ITEM PROPERTIES
+	1.flex
+	2.flex-grow
+	3.flex-shrink
+	4.flex-basis
+	5.align-self
+	6.order

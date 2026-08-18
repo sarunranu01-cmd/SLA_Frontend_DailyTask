@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        
+        .htaml_heading {
+        background: linear-gradient(135deg,#ffd700,#ffb700);
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        }
+
+        .back-home {
+            position: absolute;
+            right: 60px;
+            top: 30px;
+        }
+
+        .back-home a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .back-home:hover{
+            background: #ffd700;
+            color: #a12222;;
+        }
+
+        .main-container{
+            display: grid;
+           grid-template-columns: repeat(3,1fr);
+           margin-left: 50px;
+        }
+        .card-container-html{
+            background-color: rgb(241, 241, 143);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 300px;
+            height: 550px;
+            padding: 20px;
+            margin: 30px;
+            border-radius: 50px;
+
+        }
+        body
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        .tasks>a{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="h">
+        <div class="htaml_heading">
+            <h1>bootstrap-tailwind</h1>
+            <div class="back-home">
+                <a href="file:///D:/front_end_class/index.html">Home</a>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="card-container-html">
+                <div class="tasks">
+                    <a href="../bootstrap/Day1/task1.html"><h2>1.Task</h2></a>
+                     <a href="../bootstrap/Day1/task2.html"><h2>2.Task</h2></a>
+                     <a href="../bootstrap/Day1/task3.html"><h2>3.Task</h2></a>
+                    <a href="../bootstrap/Day2/task1.html"><h2>4.Task</h2></a>
+                    <h3>bootstrap finish</h3>
+                </div>
+            </div>
+            <div class="card-container-html">
+                <div class="tasks">
+                    <h2>tailwind</h2>
+                    <a href="../tailwind/Day1/task1.html"><h2>1.Task</h2></a>
+                    <a href="../tailwind/Day1/task2.html"><h2>2.Task</h2></a>
+                    <a href="../tailwind/Day1/task3.html"><h2>3.Task</h2></a>
+                    <a href="../tailwind/Day1/task4.html"><h2>4.Task</h2></a>
+                    <a href="../tailwind/Day1/task5.html"><h2>5.Task</h2></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

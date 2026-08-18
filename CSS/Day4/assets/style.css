@@ -1,0 +1,92 @@
+.div1{
+    background-color: orange;
+    height: 200px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: rgb(34, 255, 0);
+    height: 150px;
+    width: 200px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2{
+    background-color: black;
+    color: white;
+    margin: 10PX;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.box2{
+    background-color: blue;
+    color: white;
+    padding:10px;
+     height: 200px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* task4 */
+.box01{
+    background-color: brown;
+    height: 100px;
+    margin: 3px;
+}
+.box02{
+    background-color: brown;
+    height: 100px;
+    margin: 3px;
+    visibility: hidden;
+}
+.box03{
+    background-color: brown;
+    height: 100px;
+    margin: 3px;
+    display: none;
+}
+/* task 5 */
+.all_card{
+    background-color: orange;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2px;
+
+
+}
+.card{
+    background-color: rgb(225, 0, 255);
+    width: 150px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+.all_card01{
+    background-color: orange;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2px;
+}
+.card5{
+    visibility: hidden;
+}
+.card6{
+    display: none;
+}

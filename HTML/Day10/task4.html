@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College Admission Form</title>
+</head>
+<body>
+    <center>
+        <header>
+            <h1> College Admission Form</h1>
+        </header>
+    <hr>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="StudentName">Student Name</label></td><td>:</td>
+                <td><input type="text" name="StudentName" id="StudentName" required></td>
+            </tr>
+            <tr>
+                <td><label for="FatherName">Father Name</label></td><td>:</td>
+                <td><input type="text" name="FAtherName" id="FatherName" required></td>
+            </tr>
+            <tr>
+                <td><label for="MotherName">Mother Name</label></td><td>:</td>
+                <td><input type="text" name="MotherName" id="MotherName" required></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td><td>:</td>
+                <td><input type="email" name="Email" id="Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="PH_namber">Namber</label></td><td>:</td>
+                <td><input type="namber" name="PH_namber" id="PH_namber" minlength="10" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB</label></td><td>:</td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td><td>:</td>
+                <td><input type="radio" value="Gender" name="Gender">Male  <input type="radio" value="Gender" name="Gender">FeMale  <input type="radio" value="Gender" name="Gender">Other</td>
+            </tr>
+
+
+             <tr>
+                <td><label for="Department">Department</label></td><td>:</td>
+                <td>
+                    <input type="checkbox" name="Department">B.COM CA
+                    <input type="checkbox" name="Department">computer Application
+                    <input type="checkbox" name="Department">B.sc computer science
+                </td>
+            <tr>
+                <td><label for="percentage">Percentage</label></td><td>:</td>
+                <td><input type="number" id="percentage" name="percentage" ></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td><td>:</td>
+                <td><textarea name="address" id="address"></textarea></td>
+            </tr>
+            
+             <tr>
+                <td><label for="image">Passport Size Photo</label></td><td>:</td>
+                <td><input type="file" id="image"></td>
+            </tr>
+            <tr>
+            <td></td><td></td>
+            <td><input type="submit" value="submit"> <input type="reset" value="reset"></td>
+            </tr>
+
+
+
+        </table>
+    </form>
+    </center>
+    <br>
+    <br>
+    <center>
+    <table border="2">
+        <thead>
+            <th>Application Id</th>
+            <th>Student Name</th>
+            <th>Department</th>
+            <th>percentage</th>
+            <th>Email</th>
+            <th>Admission Status</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>S101</td>
+                <td>arun</td>
+                <td>B.sc computer science</td>
+                <td>90%</td>
+                <td>arun@gmail.com</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>S102</td>
+                <td>rahul</td>
+                <td>b.com ca</td>
+                <td>86%</td>
+                <td>re@gmail.com</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>S103</td>
+                <td>kiran</td>
+                <td>EEE</td>
+                <td>99%</td>
+                <td>kir@gmail.com</td>
+                <td>panding</td>
+            </tr>
+            <tr>
+                <td>S104</td>
+                <td>arunkumar</td>
+                <td>B.sc computer science</td>
+                <td>98%</td>
+                <td>80000</td>
+                <td>Completed</td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+
+</body>
+</html>

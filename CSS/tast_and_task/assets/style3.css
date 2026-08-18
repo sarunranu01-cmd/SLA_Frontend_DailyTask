@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(58, 55, 55);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.heading{
+    background-color:orange;
+    color: rgb(5, 5, 5);
+    height:100px;
+    display: flex;
+    justify-content:space-between;
+}
+.h_name{
+    width: 350px;
+    margin-left: 20px;
+    display:flex;
+    align-items: center;
+}
+.navbar{
+    display:flex;
+    width:500px;
+    height:100px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding:50px;
+    margin-right: 20px;
+}
+a{
+    color:black;
+    font-size:18px;
+    gap: 40px;
+}
+a:hover{
+    color: red;
+}

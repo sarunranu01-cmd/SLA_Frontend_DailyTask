@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 2000px;
+}
+.container{
+    background-color:rgba(238, 13, 13, 0.915);
+    color: white;
+    height:100px;
+    display: flex;
+    justify-content:space-between;
+    position: sticky;
+}
+.head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 200px;
+    margin-right: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display:flex;
+    width:500px;
+    height:100px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding:50px;
+    margin-right: 20px;
+}
+a{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:18px;
+    gap: 40px;
+}

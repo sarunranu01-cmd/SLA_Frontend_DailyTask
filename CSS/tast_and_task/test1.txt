@@ -1,0 +1,210 @@
+1.What is CSS? Explain the full form of CSS?
+
+	CSS stands for Cascading Style Sheets.
+	---------------------------------------------
+	CSS is used to make a web page look attractive. It controls the design of HTML elements such as colors fonts spacing borders layouts and animations
+2.What is Cascading in CSS? Give a real-time example?
+	Cascading means deciding which CSS rule should be applied when more than one rule targets the same element. The browser chooses the rule based on priority.
+	
+	real-time example:
+	<p class="Para">Hello</p>
+	p{
+	color: blue;
+	}
+
+	.text{
+	color: red;
+	}
+	The paragraph will be red because the class selector has a higher priority than the element selector
+	--------------------------------------------
+3.What is the difference between Cascading and Specificity?
+	Cascading:
+	Cascading is the process of choosing which CSS rule should be applied when there are multiple rules
+	
+	Specificity:
+	Specificity is the priority level of a selector. More specific selectors have a higher chance of being applied.
+	---------------------------------------------
+4.What are the three types of CSS? Which one is recommended in real-time projects and why?
+	types of CSS:
+		Inline CSS
+		Internal CSS
+		External CSS
+		
+		External CSS:
+		It keeps the HTML code clean and easy to read
+		One CSS file can be used for many web pages
+		Any design change needs to be made only once in the CSS file
+		It is easier to maintain large applications
+		Browsers cache external CSS files which helps pages load faster
+		------------------------------------------
+5.
+
+		Universal Selector:
+			The Universal Selector selects all the elements on a web page It is commonly used to apply the same style to every element
+		example:
+			*{
+			margin: 0;
+			padding: 0;
+			}
+		
+		Element Selector:
+			The Element Selector selects all elements of a specific HTML tag
+			example:
+			p{
+			color: red;
+			}
+			
+		Class Selector:
+			The Class Selector selects all elements that have the same class name. A class can be used for multiple elements
+		
+			example:
+			.box{
+			background-color: yellow;
+			}
+			
+		ID Selector:
+		The id Selector selects a single unique element using its id An id should be used only once on a page
+		
+		#header{
+		color: blue;
+		}
+		
+		Group Selector:
+		The Group Selector is used to apply the same style to multiple elements at the same time This helps avoid writing duplicate CSS code
+		
+		h1, p, button {
+		
+		}
+		
+		Descendant Selector:
+		The Descendant Selector selects all matching child elements inside a parent element no matter how deeply they are nested
+		div p{
+		
+		}
+		
+		Child Selector:
+		The Child Selector selects only the direct children of a parent element It does not select nested child elements
+		div > p {
+		
+		}
+
+6.What is the difference between Class Selector and ID Selector?
+		Class Selector:
+		A Class Selector is used to style one or more HTML elements The same class name can be applied to multiple elements making it reusable
+		ID Selector:
+		The id Selector selects a single unique element using its id An id should be used only once on a page
+		
+7.What is the Difference Between Descendant Selector and Child Selector?	
+		Descendant Selector
+			*selects all matching elements inside a parent element whether they are direct children or nested inside other elements
+			*The Descendant Selector uses a space between two selectors It selects all matching elements inside the parent element regardless of how deeply they are nested
+			
+		Child Selector 
+			*selects only the direct children of a parent element It does not select elements that are nested deeper inside other child elements
+			*The Child Selector uses the greaterthan symbol > It selects only the direct child elements of the parent
+			
+8.Explain the CSS Box Model. Name its four parts?
+	CSS Box Model
+		The CSS Box Model is the way CSS represents every HTML element as a rectangular box It helps us understand how the size and spacing of an element are calculated
+		1.Content
+		2.Padding
+		3.Border
+		4.Margin
+		
+9.What is the Difference Between Padding and Margin?
+		Padding:
+		*Space inside the border
+		*Creates space between the content and the border
+		*Background color extends into the padding area
+		*Increases the element's internal spacing
+		Margin:
+		*Space outside the border.
+		*Creates space between the element and other elements
+		*Background color does not extend into the margin area
+		*Creates external spacing between elements
+		
+10.What is box-sizing:border-box? Why is it recommended?
+		The box-sizing: 
+		border-box property changes how the width and height of an element are calculated
+		By default the width and height of an element include only the content If you add padding and border the actual size of the element becomes larger
+		When you use box-sizing: border-box the padding and border are included within the specified width and height This means the total size of the element remains the same
+		Why is it Recommended:
+		*Keeps the width and height predictable because padding and border are included in the specified size.
+		*Prevents layout and overflow issues when adding padding or borders
+		*Makes responsive design easier by avoiding manual size calculations
+		Widely used in realworld projects because it simplifies CSS and makes layouts easier to maintain 
+		
+		*{
+		box-sizing: border-box;
+		}
+11.
+		block:
+		*Starts on a new line
+		*Takes up the full available width
+		*Width and height can be applied
+		*Commonly used for creating page layouts
+		inline:
+		*Does not start on a new line
+		*Takes only the required width
+		*Width and height cannot be applied
+		*Used for styling small pieces of content inside a line
+		inline block:
+		*Stays on the same line
+		*Takes only the required width
+		*Width and height can be applied
+		*Combines the features of both inline and block elements
+12.Can we apply width and height to:
+		div:
+		Yes we can apply width and height to a <div> element because it is a block-level element
+		span:
+		No by default we cannot apply width and height to a <span> because it is an inline element
+		button:
+		Yes we can apply width and height to a <button> element
+		
+13.What is the Difference Between display: none and visibility: hidden?
+		display: none:
+		property completely removes the element from the web page The element is not visible and it does not occupy any space in the layout
+		visibility: hidden
+		*Hides the element from view.
+		*The element remains in the page layout.
+		*Occupies the same space as before.
+14.		
+		Flexboxis a one dimensional CSS layout model used to arrange align and distribute elements easily in a row or column 
+		It helps create flexible and responsive layouts without using floats or positioning
+		Flex Container
+		A Flex Container is the parent element on which display: flex is applied It controls the layout of all its child elements
+		lex Item:
+		*Direct child of a flex container
+		*Automatically follows the flex layout
+		*Can be resized and aligned using Flexbox properties
+		main axia
+		*Default direction is row
+		*Can be changed using flex-direction
+		*Controlled by properties like justify-content
+		Cross Axis:
+		Perpendicular to the main axis Default direction is vertical Controlled by align-items Used to align items vertically or horizontally depending on the main axis
+
+15.How do you perfectly center a div using Flexbox?Write the CSS code and explain each property
+		Flexbox provides a simple way to center a <div> both horizontally and vertically First make the parent element a flex container 
+		Then use justify-content and align-items to place the child element in the center
+		
+		<div class="box">
+		<div class="box">box1</div>
+		</div>
+		css code:
+		.box{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text align:center;
+		height: 100px;
+		}
+		
+	display: flex:
+	This property turns the parent element into a flex container All the direct child elements become flex items
+	justify-content: center:
+	This property centers the child element along the main axis By default the main axis is horizontal so it centers the <div> from left to right
+	align-items: center;
+	This property centers the child element along the cross axis By default the cross axis is vertical so it centers the <div> from top to bottom
+	height:600px;
+	This sets the container height to 600px allowing the child <div> to be centered vertically

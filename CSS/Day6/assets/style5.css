@@ -1,0 +1,50 @@
+.parent{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border: solid 1px black;
+    margin: 20px;
+}
+
+.box1{
+    background-color: red;
+    position: static;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.box2{
+    background-color: rgb(26, 255, 0);
+    position:relative;
+    padding: 10px;
+    margin: 10px;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+}
+.box3{
+    background-color: rgb(21, 21, 21);
+    position: absolute;
+    padding: 10px;
+    
+    top: 20px;
+    left: 20px;
+    text-align: center;
+}
+.box4{
+    background-color: rgb(30, 0, 255);
+    position: fixed;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+}
+.box5{
+    background-color: rgb(255, 0, 153);
+    position: sticky;
+    padding: 10px;
+
+    position: sticky;
+    top: 0px;
+    text-align: center;
+}

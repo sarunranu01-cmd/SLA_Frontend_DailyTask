@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+p{
+    line-height:1.7;
+    margin: 5px;
+    margin-left: 30px;
+}
+p::first-letter{
+    font-size: larger;
+    font-weight: 700;
+}
+p::first-line{
+    color: rgba(112, 112, 226, 0.803);
+}
+p::selection{
+    background: rgb(118, 118, 69);
+    color: rgb(194, 3, 3);
+    
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>Job Application Form</h1>
+        </header>
+    <hr>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td><td>:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td><td>:</td>
+                <td><input type="email" name="Email" id="Email"></td>
+            </tr>
+            <tr>
+                <td><label for="PH_namber">Namber</label></td><td>:</td>
+                <td><input type="namber" name="PH_namber" maxlength="10"></td>
+            </tr>
+             <tr>
+                <td><label>Date of Birth</label></td><td>:</td>
+                <td><input type="date" ></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td><td>:</td>
+                <td><input type="radio" value="Gender" name="Gender">Male  <input type="radio" value="Gender" name="Gender">FeMale  <input type="radio" value="Gender" name="Gender">Other</td>
+                
+            </tr>
+            <tr>
+                <td><label >Address</label></td><td>:</td>
+                <td><textarea name="Address" id="Address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="">Educational Qualification</label></td><td>:</td>
+                <td>
+                    <select name="Educational_qualification" id="Educational_qualification">
+                        <option value="1">BCom CA</option>
+                        <option value="2">computer Application</option>
+                        <option value="3">B,Sc.computer science</option>
+                        <option value="4">EEE</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="we">Work Experience</label></td><td>:</td>
+                <td><input type="namber" name="we" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><label for="">Skill</label></td><td>:</td>
+                <td>
+                    <input type="checkbox" name="ch1">java
+                    <input type="checkbox" name="ch2">python
+                    <input type="checkbox" name="ch3">fullstack
+                    <input type="checkbox" name="ch4">react
+                    <input type="checkbox" name="ch5">java script
+                </td>
+            </tr>
+             <tr>
+                <td><label for="">Upload resume</label></td><td>:</td>
+                <td><input type="file" name="resume"></td>
+            </tr>
+            <tr>
+            <td></td><td></td>
+            <td><input type="submit" value="Apply">   <input type="reset" value="clear"></td>
+            </tr>
+
+
+
+        </table>
+    </form>
+    </center>
+</body>
+</html>

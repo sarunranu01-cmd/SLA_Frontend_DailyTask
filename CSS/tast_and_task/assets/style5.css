@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav_container{
+    background-color: hotpink;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading,.navbar{
+    display: flex;
+    width: 40%;
+    font-size: 23px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: baseline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading >h1{
+    margin-right: 45%;
+    font-size:37px;  
+}
+.navbar{
+    gap:40px;
+    font-size: 19px; 
+}
+a{
+    background-color: rgba(136, 239, 239, 0.899);
+    color: black;
+    border: none;
+    border-radius: 20%;
+    padding: 8px;
+}
+a:hover{
+    color: brown;
+}
+.heading>h1:hover{
+    color: rgba(218, 13, 13, 0.9);
+
+} 
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    margin:10px;
+}
+#about>h2{
+    font-size:35px;
+}
+#about>p{
+    padding:10px;
+    font-size: large;
+
+}
+.full{
+    background-color:orange;
+    height: 200px;
+    border: 1px solid black;
+
+
+
+
+}
+.full>h2{
+    align-items: center;
+    margin: 10px;
+    padding:10px;
+    text-align: center;
+    font-size: 40px;  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 30px;
+    margin-top:20px ;
+ 
+}
+.skill{
+    background-color: bisque;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: black solid 1px;
+    gap:20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 3px;
+}

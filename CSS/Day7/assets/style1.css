@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.img_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px;
+    margin-left: 160px;
+    align-items: center;
+}
+.img_container>img{
+    height: 220px;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}

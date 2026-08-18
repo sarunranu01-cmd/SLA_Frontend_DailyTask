@@ -1,0 +1,30 @@
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ 
+ .parent{
+
+    width: 100px;
+   font-size:70px;
+    position: relative;
+ }
+.badge{
+   position: absolute;
+   background-color: black;
+   color: rgb(21, 238, 39);
+   border-radius:50%;
+   top: 0;
+   right:0;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   font-size: 15px;
+   padding-top: 5px;
+   margin-left: 10px;
+
+
+}
+ 

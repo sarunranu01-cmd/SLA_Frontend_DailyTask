@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+.heading{
+    background-color:orange;
+    color: black;
+    text-align: center;
+    height: 90px;
+    text-align: center;
+    padding-top:10px;
+    font-size: xx-large;
+}
+#comp1{
+    background-color: rgb(26, 26, 35);
+    color: red;
+}
+#comp2{
+    background-color: rgb(255, 0, 174);
+    color: black;
+}
+#comp3{
+    background-color: rgb(14, 6, 255);
+    color: red;
+}
+.company {
+    margin: 20px;
+    text-align: center;
+    width: 900px;
+    height: 200px;
+    padding: 5px;
+
+}
+
+div>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 60px;
+}
+
+.b{
+    background-color: rgba(234, 160, 160, 0.678);
+    color: black;
+    height: 60px;
+    width: 80px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 3px solid black;
+    font-size: 13px;
+    text-align: center;
+    font-weight:700;
+     margin: 5px; 
+     transition: 0.5s;
+}
+h1{
+  margin-bottom:20px ;
+}
+.b:hover{
+    background-color:black;
+    color: white;
+    transform: scale(1.1);
+    border:solid rgba(189, 231, 39, 0.927) 3px;
+}
+
+

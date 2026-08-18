@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.Department{
+    background-color:black;
+    color:white;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding:10px;
+    margin: 50px;
+
+}
+h1{
+    padding-top: 30px;
+}
+#first_id{
+    background-color:rgb(247, 6, 6);
+    color:black;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding:10px;
+    margin: 50px;
+
+}
+.first_head{
+    background-color:rgb(247, 6, 6);
+    color:black;
+    height: 100px;
+    text-align: center;
+    padding:10px;
+
+}

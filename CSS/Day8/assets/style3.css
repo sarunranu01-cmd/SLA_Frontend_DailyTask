@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    margin:30px;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+}
+ul>li{
+    padding: 10px;
+}
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: rgb(221, 38, 38);
+}

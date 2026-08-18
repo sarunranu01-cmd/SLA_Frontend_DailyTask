@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product Registration & Inventory Report</title>
+</head>
+<body>
+    <center>
+        <header>
+            <h1> Product Registration & Inventory Report</h1>
+        </header>
+    <hr>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="ProductID">Product ID</label></td><td>:</td>
+                <td><input type="number" name="EProductID" id="ProductID" required></td>
+            </tr>
+            <tr>
+                <td><label for="ProductName">Product Name</label></td><td>:</td>
+                <td><input type="text" name="ProductName" id="ProductName" required></td>
+            </tr>
+             <tr>
+                <td><label for="brand">Brand</label></td><td>:</td>
+                <td><input type="text" id="brand" name="brand"></td>
+            </tr>
+
+            <tr>
+                <td><label for="category">Category</label></td><td>:</td>
+                <td>
+                    <select id="category" name="category">
+                        <option>Select Category</option>
+                        <option>mobile</option>
+                        <option>maptop</option>
+                        <option>television</option>
+                        <option>accessories</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="price">price</label></td><td>:</td>
+                <td><input type="number" id="price" name="price"></td>
+            </tr>
+            <tr>
+                <td><label for="Quantity">Quantity</label></td><td>:</td>
+                <td><input type="number" id="Quantity" name="Quantity"></td>
+            </tr>
+            <tr>
+                <td><label for="Supplier">Supplier</label></td><td>:</td>
+                <td><input type="text" id="Supplier" name="Supplier"></td>
+            </tr>
+            
+
+             <tr>
+                <td><label for="p_m">Product Image</label></td><td>:</td>
+                <td><input type="file" id="p_m"></td>
+            </tr>
+            <tr>
+            <td></td><td></td>
+            <td><input type="submit" value="submit"> <input type="reset" value="reset"></td>
+            </tr>
+
+
+
+        </table>
+    </form>
+    </center>
+    <br>
+    <br>
+    <center>
+    <table border="2">
+        <thead>
+            <th> product Id</th>
+            <th>Product Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Stock Status</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P102</td>
+                <td>iphone 16pro</td>
+                <td>Apple</td>
+                <td>100000</td>
+                <td>3</td>
+                <td>In stock</td>
+            </tr>
+           <tr>
+                <td>P103</td>
+                <td>Galaxy S24</td>
+                <td>Samsung</td>
+                <td>87000</td>
+                <td>3</td>
+                <td>In stock</td>
+            </tr>
+           <tr>
+                <td>P104</td>
+                <td>lenovo ipad 3</td>
+                <td>lenovo</td>
+                <td>50000</td>
+                <td>10</td>
+                <td>In stock</td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+
+</body>
+</html>

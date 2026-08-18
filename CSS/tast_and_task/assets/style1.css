@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:orange;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.heading{
+    background-color:rgba(238, 13, 13, 0.915);
+    color: white;
+    height:100px;
+    display: flex;
+    justify-content:space-between;
+}
+.h_name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 350px;
+    margin-left: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display:flex;
+    width:500px;
+    height:100px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding:50px;
+    margin-right: 20px;
+}
+a{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:18px;
+    gap: 40px;
+}
+.student_information{
+    background-color:rgb(142, 171, 181);
+    width: 1500px;
+    height:130px;
+    margin:17px;  
+    border-radius: 9px;
+    border: 2px black solid;
+
+}
+.student_information>h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding:5px;
+}
+.student_information>p{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 3px;
+    padding-left: 10px;
+}
+.s_active{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width:200px;
+    height: 120px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+     
+}
+

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header_container{
+    background-color: rgba(72, 67, 67, 0.837);
+    color: white;
+    height:100px;
+    display: flex;
+    justify-content:space-between;
+}
+.head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 300px;
+    margin-left: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    width: 600px;
+    height:100px;
+    justify-content: center;
+    align-items: center;
+   gap: 30px;
+
+
+    
+}
+.navbar > a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+}
+a:hover{
+    color:rgba(235, 26, 26, 0.815)
+
+}
+
+.card_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;  
+    
+}
+.card{
+    background-color: rgba(67, 161, 89, 0.896);
+    color: black;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 30px;  
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.card >h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding:10px;
+    text-align: center;
+}
+.card >p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+h2:hover{
+    color: rgb(255, 0, 225);
+}
