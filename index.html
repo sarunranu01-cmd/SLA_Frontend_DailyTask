@@ -144,11 +144,11 @@
 
         .card-image {
 
-            width: 40%;
+            width: 360px;
 
-            min-height: 280px;
+            min-height: 240px;
 
-            padding: 20px;
+            padding: 15px;
 
             display: flex;
 
@@ -157,28 +157,37 @@
             justify-content: center;
 
             overflow: hidden;
+
+            background: #f8fafc;
         }
 
 
-        .card-image {
+        .card-image img {
 
-            width: 350px;
+            width: 100%;
 
-            height: 210px;
+            height: 100%;
 
-            object-fit: contain;
+            max-height: 210px;
+
+            object-fit: cover;
+
+            border-radius: 16px;
 
             display: block;
 
-            transition:
-                transform 0.5s ease;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
 
         }
 
 
         .card:hover .card-image img {
 
-            transform: scale(1.06);
+            transform: scale(1.05);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
 
@@ -238,6 +247,13 @@
             background: #e8dcff;
 
             color: #663c9b;
+        }
+
+        .js-label {
+
+            background: #fef9c3;
+
+            color: #a16207;
         }
 
 
@@ -624,7 +640,7 @@
 
                 <div class="card-image html-image">
 
-                    <img src="task_folder/assets/1.png" alt="HTML Task">
+                    <img src="task_folder/assets/html5.jpg" alt="HTML5 Web Structure">
 
                 </div>
 
@@ -665,7 +681,7 @@
 
                 <div class="card-image css-image">
 
-                    <img src="task_folder/assets/1.png" alt="CSS Task">
+                    <img src="task_folder/assets/css3.jpg" alt="CSS3 Styling & Design">
 
                 </div>
 
@@ -705,7 +721,7 @@
 
                 <div class="card-image bootstrap-image">
 
-                    <img src="task_folder/assets/1.png" alt="Bootstrap Task">
+                    <img src="task_folder/assets/bootstrap_tailwind.jpg" alt="Bootstrap & Tailwind Frameworks">
 
                 </div>
 
@@ -717,18 +733,59 @@
                     </span>
 
                     <h3>
-                        Bootstrap
+                        Bootstrap & Tailwind
                     </h3>
 
                     <p>
-                        Practice Bootstrap grids, cards,
-                        buttons, navigation bars and
-                        responsive components.
+                        Practice Bootstrap grids, components,
+                        and Tailwind CSS utility classes and
+                        modern responsive web design.
                     </p>
 
                     <a href="task_folder/bootstraptailwind.html" target="_blank" class="task-btn">
 
-                        Go to Bootstrap Task
+                        Go to Bootstrap & Tailwind Task
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+
+                <div class="card-image js-image">
+
+                    <img src="task_folder/assets/javascript.jpg" alt="JavaScript Interactivity & Logic">
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <span class="card-label js-label">
+                        INTERACTIVITY
+                    </span>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Practice DOM manipulation, events,
+                        functions, conditional logic, arrays,
+                        objects and dynamic interactive web
+                        applications.
+                    </p>
+
+                    <a href="task_folder/javascript.html" target="_blank" class="task-btn">
+
+                        Go to JavaScript Task
 
                         <span>
                             →

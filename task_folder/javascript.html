@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Tasks in Bootstrap & Tailwind - Day Wise</title>
+    <title>Daily Tasks in JavaScript - Day Wise</title>
     <style>
         * {
             margin: 0;
@@ -73,7 +73,7 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
-        /* Filter Navigation Bar */
+        /* Day Filter Navigation Bar */
         .filter-container {
             max-width: 1250px;
             margin: 30px auto 10px;
@@ -164,32 +164,6 @@
             align-items: center;
         }
 
-        .bootstrap-header {
-            background: linear-gradient(135deg, #f5f3ff, #ede9fe);
-            border-bottom: 1px solid #ddd6fe;
-        }
-
-        .bootstrap-header h2 {
-            color: #6d28d9 !important;
-        }
-
-        .bootstrap-header span {
-            color: #7c3aed !important;
-        }
-
-        .tailwind-header {
-            background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
-            border-bottom: 1px solid #99f6e4;
-        }
-
-        .tailwind-header h2 {
-            color: #0f766e !important;
-        }
-
-        .tailwind-header span {
-            color: #14b8a6 !important;
-        }
-
         .day-title-group h2 {
             font-size: 20px;
             color: #854d0e;
@@ -210,14 +184,6 @@
             padding: 5px 12px;
             border-radius: 20px;
             letter-spacing: 0.5px;
-        }
-
-        .bootstrap-badge {
-            background: #7c3aed;
-        }
-
-        .tailwind-badge {
-            background: #0d9488;
         }
 
         /* Task Links List */
@@ -331,8 +297,8 @@
 
     <!-- Header -->
     <header class="htaml_heading">
-        <h1>Daily Tasks in Bootstrap & Tailwind</h1>
-        <p>Click on any Category or Day to view its tasks, or click any Task to open it directly</p>
+        <h1>Daily Tasks in JavaScript</h1>
+        <p>Click on any Day to view its tasks, or click any Task to open it directly</p>
         <div class="back-home">
             <a href="../index.html">← Back to Home</a>
         </div>
@@ -341,138 +307,241 @@
     <!-- Day Navigation / Selector -->
     <section class="filter-container">
         <div class="filter-label">
-            <span>Filter Framework / Day:</span>
+            <span>Select Day:</span>
         </div>
         <div class="day-nav">
-            <button class="day-btn active" onclick="filterCategory('all', this)">All Frameworks</button>
-            <button class="day-btn" onclick="filterCategory('bootstrap', this)">All Bootstrap</button>
-            <button class="day-btn" onclick="filterCategory('bs-day1', this)">Bootstrap Day 1</button>
-            <button class="day-btn" onclick="filterCategory('bs-day2', this)">Bootstrap Day 2</button>
-            <button class="day-btn" onclick="filterCategory('tailwind', this)">All Tailwind</button>
-            <button class="day-btn" onclick="filterCategory('tw-day1', this)">Tailwind Day 1</button>
-            <button class="day-btn" onclick="filterCategory('tw-day2', this)">Tailwind Day 2</button>
+            <button class="day-btn active" onclick="filterDay('all', this)">All Days</button>
+            <button class="day-btn" onclick="filterDay('day1', this)">Day 1</button>
+            <button class="day-btn" onclick="filterDay('day2', this)">Day 2</button>
+            <button class="day-btn" onclick="filterDay('day3', this)">Day 3</button>
+            <button class="day-btn" onclick="filterDay('day4', this)">Day 4</button>
+            <button class="day-btn" onclick="filterDay('day5', this)">Day 5</button>
+            <button class="day-btn" onclick="filterDay('day6', this)">Day 6</button>
+            <button class="day-btn" onclick="filterDay('day7', this)">Day 7</button>
+            <button class="day-btn" onclick="filterDay('day8', this)">Day 8</button>
+            <button class="day-btn" onclick="filterDay('day9', this)">Day 9</button>
+            <button class="day-btn" onclick="filterDay('extra', this)">Arrays & Objects</button>
         </div>
     </section>
 
     <!-- Main Container with Day-wise Cards -->
     <main class="main-container">
 
-        <!-- Bootstrap Day 1 -->
-        <article class="day-card" data-cat="bootstrap" data-day="bs-day1">
-            <div class="day-card-header bootstrap-header">
+        <!-- Day 1 -->
+        <article class="day-card" data-day="day1">
+            <div class="day-card-header">
                 <div class="day-title-group">
-                    <h2>Bootstrap — Day 01</h2>
-                    <span>Grids, Buttons & Typography</span>
+                    <h2>Day 01</h2>
+                    <span>Variables & Data Types</span>
                 </div>
-                <span class="task-badge bootstrap-badge">3 Tasks</span>
+                <span class="task-badge">1 Task</span>
             </div>
             <div class="task-list">
-                <a href="../bootstrap/Day1/task1.html" class="task-link">
+                <a href="../java_script/Day1/variable2.txt" class="task-link">
                     <div class="task-info">
                         <span class="task-number">1</span>
-                        <span class="task-name">Task 1: Bootstrap Grid System</span>
+                        <span class="task-name">Task 1: Variables & Declarations</span>
                     </div>
                     <span class="task-arrow">→</span>
                 </a>
-                <a href="../bootstrap/Day1/task2.html" class="task-link">
+            </div>
+        </article>
+
+        <!-- Day 2 -->
+        <article class="day-card" data-day="day2">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Day 02</h2>
+                    <span>Operators, Arithmetic & Logic</span>
+                </div>
+                <span class="task-badge">2 Tasks</span>
+            </div>
+            <div class="task-list">
+                <a href="../java_script/Day2/index.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: JavaScript Operators</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+                <a href="../java_script/Day2/alltask.html" class="task-link">
                     <div class="task-info">
                         <span class="task-number">2</span>
-                        <span class="task-name">Task 2: Buttons & Alerts</span>
-                    </div>
-                    <span class="task-arrow">→</span>
-                </a>
-                <a href="../bootstrap/Day1/task3.html" class="task-link">
-                    <div class="task-info">
-                        <span class="task-number">3</span>
-                        <span class="task-name">Task 3: Navigation Bar & Badges</span>
+                        <span class="task-name">Task 2: All Operator Tasks</span>
                     </div>
                     <span class="task-arrow">→</span>
                 </a>
             </div>
         </article>
 
-        <!-- Bootstrap Day 2 -->
-        <article class="day-card" data-cat="bootstrap" data-day="bs-day2">
-            <div class="day-card-header bootstrap-header">
+        <!-- Day 3 -->
+        <article class="day-card" data-day="day3">
+            <div class="day-card-header">
                 <div class="day-title-group">
-                    <h2>Bootstrap — Day 02</h2>
-                    <span>Cards & Responsive Layouts</span>
+                    <h2>Day 03</h2>
+                    <span>Conditional Statements & Logic</span>
                 </div>
-                <span class="task-badge bootstrap-badge">1 Task</span>
+                <span class="task-badge">2 Tasks</span>
             </div>
             <div class="task-list">
-                <a href="../bootstrap/Day2/task1.html" class="task-link">
+                <a href="../java_script/Day3/index.html" class="task-link">
                     <div class="task-info">
                         <span class="task-number">1</span>
-                        <span class="task-name">Task 1: Responsive Card Components</span>
+                        <span class="task-name">Task 1: If-Else & Switch Statements</span>
                     </div>
                     <span class="task-arrow">→</span>
                 </a>
-            </div>
-        </article>
-
-        <!-- Tailwind Day 1 -->
-        <article class="day-card" data-cat="tailwind" data-day="tw-day1">
-            <div class="day-card-header tailwind-header">
-                <div class="day-title-group">
-                    <h2>Tailwind — Day 01</h2>
-                    <span>Utility Classes & Components</span>
-                </div>
-                <span class="task-badge tailwind-badge">5 Tasks</span>
-            </div>
-            <div class="task-list">
-                <a href="../tailwind/Day1/task1.html" class="task-link">
-                    <div class="task-info">
-                        <span class="task-number">1</span>
-                        <span class="task-name">Task 1: Typography & Color Utilities</span>
-                    </div>
-                    <span class="task-arrow">→</span>
-                </a>
-                <a href="../tailwind/Day1/task2.html" class="task-link">
+                <a href="../java_script/Day3/allTask.html" class="task-link">
                     <div class="task-info">
                         <span class="task-number">2</span>
-                        <span class="task-name">Task 2: Flexbox & Spacing</span>
-                    </div>
-                    <span class="task-arrow">→</span>
-                </a>
-                <a href="../tailwind/Day1/task3.html" class="task-link">
-                    <div class="task-info">
-                        <span class="task-number">3</span>
-                        <span class="task-name">Task 3: Custom Card Components</span>
-                    </div>
-                    <span class="task-arrow">→</span>
-                </a>
-                <a href="../tailwind/Day1/task4.html" class="task-link">
-                    <div class="task-info">
-                        <span class="task-number">4</span>
-                        <span class="task-name">Task 4: Interactive Buttons & States</span>
-                    </div>
-                    <span class="task-arrow">→</span>
-                </a>
-                <a href="../tailwind/Day1/task5.html" class="task-link">
-                    <div class="task-info">
-                        <span class="task-number">5</span>
-                        <span class="task-name">Task 5: Responsive Grid Layout</span>
+                        <span class="task-name">Task 2: Conditional Tasks Hub</span>
                     </div>
                     <span class="task-arrow">→</span>
                 </a>
             </div>
         </article>
 
-        <!-- Tailwind Day 2 -->
-        <article class="day-card" data-cat="tailwind" data-day="tw-day2">
-            <div class="day-card-header tailwind-header">
+        <!-- Day 4 -->
+        <article class="day-card" data-day="day4">
+            <div class="day-card-header">
                 <div class="day-title-group">
-                    <h2>Tailwind — Day 02</h2>
-                    <span>Complete FutureWork Platform</span>
+                    <h2>Day 04</h2>
+                    <span>Loops & Iterations</span>
                 </div>
-                <span class="task-badge tailwind-badge">1 Project</span>
+                <span class="task-badge">1 Task</span>
             </div>
             <div class="task-list">
-                <a href="../tailwind/Day2/index.html" class="task-link">
+                <a href="../java_script/Day4/index.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: For, While & Do-While Loops</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Day 5 -->
+        <article class="day-card" data-day="day5">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Day 05</h2>
+                    <span>Functions & Practical Exercises</span>
+                </div>
+                <span class="task-badge">2 Tasks</span>
+            </div>
+            <div class="task-list">
+                <a href="../java_script/Day5/5simpleTask.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: 5 Simple JS Tasks</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+                <a href="../java_script/Day5/task.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">2</span>
+                        <span class="task-name">Task 2: Main Function Tasks</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Day 6 -->
+        <article class="day-card" data-day="day6">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Day 06</h2>
+                    <span>DOM Manipulation Basics</span>
+                </div>
+                <span class="task-badge">1 Task</span>
+            </div>
+            <div class="task-list">
+                <a href="../java_script/Day6/index.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: Selecting & Modifying Elements</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Day 7 -->
+        <article class="day-card" data-day="day7">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Day 07</h2>
+                    <span>DOM Events & Form Validation</span>
+                </div>
+                <span class="task-badge">1 Task</span>
+            </div>
+            <div class="task-list">
+                <a href="../java_script/Day7/index.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: Click, Input & Submit Events</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Day 8 -->
+        <article class="day-card" data-day="day8">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Day 08</h2>
+                    <span>Advanced Functions & Callbacks</span>
+                </div>
+                <span class="task-badge">1 Task</span>
+            </div>
+            <div class="task-list">
+                <a href="../java_script/Day8/index.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: Arrow Functions & Callbacks</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Day 9 -->
+        <article class="day-card" data-day="day9">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Day 09</h2>
+                    <span>Objects & Interactive Apps</span>
+                </div>
+                <span class="task-badge">1 Task</span>
+            </div>
+            <div class="task-list">
+                <a href="../java_script/Day9/index.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: JS Objects, Keys & Methods</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Arrays & Objects -->
+        <article class="day-card" data-day="extra">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Arrays & Objects</h2>
+                    <span>Array Methods & Data Structures</span>
+                </div>
+                <span class="task-badge">1 Project</span>
+            </div>
+            <div class="task-list">
+                <a href="../java_script/Arrayobject/index.html" class="task-link">
                     <div class="task-info">
                         <span class="task-number">★</span>
-                        <span class="task-name">Project: FutureWork AI & Careers Hub</span>
+                        <span class="task-name">Project: Array & Object Operations</span>
                     </div>
                     <span class="task-arrow">→</span>
                 </a>
@@ -483,7 +552,7 @@
 
     <!-- Interactive Filtering Script -->
     <script>
-        function filterCategory(selectedFilter, buttonElement) {
+        function filterDay(selectedDay, buttonElement) {
             // Update active state on buttons
             const buttons = document.querySelectorAll('.day-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
@@ -491,19 +560,11 @@
                 buttonElement.classList.add('active');
             }
 
-            // Filter the cards
+            // Filter the day cards
             const cards = document.querySelectorAll('.day-card');
             cards.forEach(card => {
-                const cardCat = card.getAttribute('data-cat');
                 const cardDay = card.getAttribute('data-day');
-
-                if (selectedFilter === 'all') {
-                    card.classList.remove('hidden');
-                } else if (selectedFilter === 'bootstrap' && cardCat === 'bootstrap') {
-                    card.classList.remove('hidden');
-                } else if (selectedFilter === 'tailwind' && cardCat === 'tailwind') {
-                    card.classList.remove('hidden');
-                } else if (cardDay === selectedFilter) {
+                if (selectedDay === 'all' || cardDay === selectedDay) {
                     card.classList.remove('hidden');
                 } else {
                     card.classList.add('hidden');
@@ -511,21 +572,21 @@
             });
 
             // Update URL hash without jumping
-            if (selectedFilter === 'all') {
+            if (selectedDay === 'all') {
                 history.replaceState(null, null, window.location.pathname);
             } else {
-                history.replaceState(null, null, '#' + selectedFilter);
+                history.replaceState(null, null, '#' + selectedDay);
             }
         }
 
-        // Handle URL hash on initial load (e.g. bootstraptailwind.html#tailwind)
+        // Handle URL hash on initial load (e.g. javascript.html#day5)
         window.addEventListener('DOMContentLoaded', () => {
             const hash = window.location.hash.replace('#', '').toLowerCase();
             if (hash) {
                 const targetBtn = Array.from(document.querySelectorAll('.day-btn'))
                     .find(btn => btn.getAttribute('onclick') && btn.getAttribute('onclick').includes("'" + hash + "'"));
                 if (targetBtn) {
-                    filterCategory(hash, targetBtn);
+                    filterDay(hash, targetBtn);
                 }
             }
         });
