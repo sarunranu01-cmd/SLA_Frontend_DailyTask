@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test Program</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ffd700, #ffb700);
+            padding: 26px 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #1e293b;
+        }
+
+        .header p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        .nav-links {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-size: 14px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            background: #1e293b;
+            color: #ffd700;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto 60px;
+            padding: 0 20px;
+        }
+
+        .code-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .card-top {
+            background: #1e293b;
+            color: #ffd700;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        pre {
+            background: #0f172a;
+            color: #f1f5f9;
+            padding: 24px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.65;
+            overflow-x: auto;
+        }
+
+        .hint-box {
+            margin-top: 15px;
+            background: #fef9c3;
+            border: 1px solid #fef08a;
+            color: #854d0e;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                text-align: left;
+            }
+            .nav-links {
+                position: static;
+                transform: none;
+                margin-top: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>JavaScript Test Program Code</h1>
+        <p>Original Test Assessment Code</p>
+        <div class="nav-links">
+            <a href="../../task_folder/javascript.html">← JS Tasks</a>
+            <a href="../../index.html">← Home</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="code-card">
+            <div class="card-top">
+                <span>📁 assets/index.js</span>
+                <span>JavaScript</span>
+            </div>
+            <pre><code>// console.log("Question 1 Write a program to print all even numbers from 1 to 50 using a for loop in a single line.");
+ 
+// let number="";
+// for(let i=1;i<=50;i++)
+// {
+//     if(i%2==0)
+//     {
+//         number+=i+" "    
+//     }
+    
+// }
+// console.log("even number"+number);
+// -----------------------------------------------------
+let numbers=5;
+let factorial=1;
+let i=1;
+while(i&lt;numbers)
+{
+    factorial*=i;
+    i++
+    console.log("factorial of "+numbers+":"+i);
+    
+}
+// -----------------------------------------------------
+let a=20;
+do{
+    console.log(a);
+    a--;    
+}
+while(a&gt;=1);
+// --------------------------------------------------------
+let s="JavaScript";
+let rev = "";
+
+for (let n=s.length-1;n&gt;=0; n--) {
+    rev += s[n];
+}
+
+console.log(rev);
+// -------------------------------------------------------
+// Question 5
+const Numbers = [45, 12, 89, 34, 67, 90, 23];
+
+let bigNumber = Numbers[0];
+
+for (let v = 1; v&lt; Numbers.length; v++) {
+    if (Numbers[v] &gt; bigNumber) {
+        bigNumber = Numbers[v];
+    }
+}
+
+console.log("Highest number: " + bigNumber);
+// --------------------------------------------------------
+// Question 6
+const NUMBERS = [10, 15, 20, 25, 30, 35, 40];
+
+let total = 0;
+
+for (let l = 0; l &lt; NUMBERS.length; l++) {
+
+    if (NUMBERS[l] % 2 != 0) {
+        console.log(NUMBERS[l]);
+        total = total + NUMBERS[l];
+    }
+
+}
+
+console.log("Total: " + total);
+// -----------------------------------------------------------
+// Question 7
+const student = {
+    name: "Arun",
+    age: 21,
+    course: "Java Full Stack",
+    mark: 90
+};
+
+console.log("Name: " + student.Name);
+console.log("Age: " + student.age);
+console.log("Course: " + student.course);
+console.log("Mark: " + student.mark);
+// ------------------------------------------------------------------
+// Question 8
+const students = [
+    { Name: "Arun", Mark: 85 },
+    { Name: "kiran", Mark: 65 },
+    { Name: "varun", Mark: 90 },
+    { Name: "Deepak", Mark: 70 }
+];
+
+for (let k = 0; k &lt; students.length; k++) {
+    if (students[k].Mark &gt; 75) {
+        console.log(students[k].Name);
+        console.log(students[k].Mark);
+    }
+}
+// ---------------------------------------------------------------
+// Question 9
+const arrowfunctions= (num) =&gt; {
+    return num * num;
+};
+
+console.log(arrowfunctions(5));
+
+
+function normalfunction(num) {
+    return num * num;
+}
+
+console.log(normalfunction(5));
+
+const functions = function(num) {
+    return num * num;
+};
+
+console.log(functions(5));
+
+// -----------------------------------------------------
+// Question 9
+function myinfo(name, age) {
+    return `My name is ${name} and I am ${age} years old.`;
+}
+
+let result = myinfo("arun", 21);
+
+console.log(result);
+// --------------------------------------------------------
+console.log(A);
+
+var A = 10;
+// ---------------------------------------------------------
+const student3 = {
+    name3: "arun",
+    Age: 22,
+    Course: "JavaScript"
+};
+
+const { name3, Course } = student3;
+
+console.log("Name: " + name3);
+console.log("Course: " + Course);
+
+// ------------------------------------------------------
+const users = [
+    {
+        Names: "Ravi",
+        Marks: [80, 90, 85],
+        address: {
+            city: "Chennai"
+        }
+    },
+    {
+        Names: "ARUN",
+        Marks: [60, 70, 75]
+    }
+];
+
+for (const user of users) {
+
+    const { Names, Marks, address } = user;
+
+    const city = address?.city ?? "City Not Available";
+
+    let TOTAL = 0;
+
+    for (const MarkS of Marks) {
+        TOTAL += MarkS;
+    }
+
+    console.log("Name: " + Names);
+    console.log("City: " + city);
+    console.log("Total Marks: " + TOTAL);
+}</code></pre>
+        </div>
+        <div class="hint-box">
+            💡 Open browser DevTools (F12 ➜ Console) to view the live execution outputs of your code.
+        </div>
+    </main>
+
+    <!-- Run original script in browser console -->
+    <script src="assets/index.js"></script>
+</body>
+</html>

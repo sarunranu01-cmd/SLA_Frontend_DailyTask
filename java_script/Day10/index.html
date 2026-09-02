@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive JavaScript Learning Platform featuring 10 Logic questions with line-by-line breakdown, 10 top interview deep dives, and 10 must-know simple interview answers with live code runner." />
+  <title>JS Mastery Hub | Interactive Code Learning & Interview Platform</title>
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" onclick="resetFilters(); return false;">
+        <span class="brand-badge">JS</span>
+        <span>Mastery<span style="color:var(--accent-blue);">Hub</span></span>
+      </a>
+
+      <!-- Real-time Search Input -->
+      <div class="nav-search-bar">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="globalSearchInput" 
+          placeholder="Search by topic, keyword (e.g. closure, promise, hoisting, reduce)..." 
+          aria-label="Search JavaScript questions"
+        />
+      </div>
+
+      <!-- Controls & Progress Tracker -->
+      <div class="nav-controls">
+        <div class="progress-pill" id="headerProgressPill" title="Your Overall Learning Progress">
+          <span>🏆</span> 0 / 30 Mastered (0%)
+        </div>
+
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode">
+          <span>☀️</span> Light
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section & Overall Stats Banner -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span>⚡</span> Master JavaScript Logic & Ace Frontend Interviews
+      </div>
+      <h1 class="hero-title">
+        Learn JavaScript <span>Line by Line</span> with Interactive Visualizers
+      </h1>
+      <p class="hero-desc">
+        Explore 30 carefully curated questions across core categories: tricky logic output with step-by-step memory inspector, top deep-dive interview topics with real-world analogies, and rapid 30-second interview pitches.
+      </p>
+
+      <!-- Stats Bar -->
+      <div class="hero-stats-bar">
+        <div class="hero-stat-card">
+          <span>🧩 Logic & Step Breakdown:</span>
+          <strong>10</strong>
+        </div>
+        <div class="hero-stat-card">
+          <span>🚀 Top Interview Questions:</span>
+          <strong>10</strong>
+        </div>
+        <div class="hero-stat-card">
+          <span>⚡ Must-Know Quick Pitches:</span>
+          <strong>10</strong>
+        </div>
+        <div class="hero-stat-card">
+          <span>🎉 Completed:</span>
+          <strong id="heroStatCompleted" style="color:var(--accent-green);">0</strong>
+        </div>
+      </div>
+
+      <!-- Linear Progress Bar -->
+      <div class="overall-progress-container">
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="heroProgressFill"></div>
+        </div>
+        <div class="progress-text">
+          <span>Overall Mastery</span>
+          <span id="progressPercentageText">0/30 Completed (0%)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Switching Tabs -->
+  <nav class="category-nav">
+    <div class="category-tabs-wrapper">
+      <button class="category-tab-btn active" data-category="logic">
+        <span>🧩</span> 10 Logic & Line-by-Line Breakdown <span class="badge-pill">10</span>
+      </button>
+      <button class="category-tab-btn" data-category="interview">
+        <span>🚀</span> Top 10 Most Asked JS Interview <span class="badge-pill">10</span>
+      </button>
+      <button class="category-tab-btn" data-category="mustknow">
+        <span>⚡</span> 10 Must-Know Quick Answers <span class="badge-pill">10</span>
+      </button>
+      <button class="category-tab-btn" data-category="playground">
+        <span>🛠️</span> Live Code Playground
+      </button>
+      <button class="category-tab-btn" data-category="quiz">
+        <span>🎯</span> Flashcard Quiz Mode
+      </button>
+    </div>
+  </nav>
+
+  <!-- Dynamic Content Area -->
+  <main class="main-content" id="mainContentArea">
+    <!-- Rendered dynamically by app.js -->
+  </main>
+
+  <!-- Modal Overlay (Used for Line-by-Line Stepper & Deep Dive Dialogs) -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div id="modalDynamicContent" style="width:100%; max-width:1100px;">
+      <!-- Modal content injected dynamically -->
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <p>
+      <strong>JS Mastery Hub</strong> — Built for frontend developers, students, and interview candidates.
+    </p>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--text-muted);">
+      Interactive JavaScript Code Learning Platform • Line-by-Line Execution Engine • Sandboxed Code Runner
+    </p>
+  </footer>
+
+  <!-- Question Database & Application Scripts -->
+  <script src="assets/js/questions-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
