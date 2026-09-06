@@ -1,0 +1,91 @@
+1. What is DOM in JavaScript? Why do we need DOM?
+The DOM (Document Object Model) is a programming interface for web documents. It converts an HTML document into a logical tree structure of nodes and objects so programming languages like JavaScript can read and manipulate it.
+
+We need the DOM because raw HTML is static and cannot change after the browser renders it. The DOM provides a live representation in memory, enabling JavaScript to update content, process user inputs, trigger animations, and change layout on the fly without refreshing the page.
+
+2. What is the difference between HTML and DOM?
+HTML (Source): The static, text-based code saved in a .html file.
+
+DOM (Live): The dynamic, object-oriented representation built by the browser in memory after parsing the HTML.
+
+When JavaScript modifies a page (like changing a heading color), it alters the DOM in memory, while the underlying .html file on the server stays unchanged.
+
+3. What is the document object in JavaScript?
+The document object is the entry point into the webpage's content. It represents the root node of the DOM tree and is a built-in property of the global window object. Every selector, creation method, or element lookup starts with the document object.
+
+4. What are DOM selectors? Name the important DOM selector methods.
+DOM selectors are built-in JavaScript methods used to target and retrieve HTML elements from the DOM tree so you can modify them.
+
+Primary Selector Methods:
+
+document.getElementById()
+
+document.querySelector()
+
+document.querySelectorAll()
+
+document.getElementsByClassName()
+
+document.getElementsByTagName()
+
+
+
+5.Difference Between getElementById() and querySelector()
+Input Format:
+getElementById() strictly takes an ID string without any special characters (for example, document.getElementById('header')).
+querySelector() takes any valid CSS selector string, which requires CSS syntax prefixes like # for IDs, . for classes, or tag names (for example, document.querySelector('#header') or document.querySelector('.nav-item')).
+
+Flexibility:
+getElementById() is limited strictly to selecting elements by their unique ID attribute.
+querySelector() is highly versatile and allows you to target elements using complex CSS rules, such as attribute selectors, 
+child selectors, or combined class/tag queries (for example, document.querySelector('ul.menu > li.active')).
+
+Context Scope:
+getElementById() can only be called on the main document object.
+querySelector() can be called on both the document object and individual HTML element objects to scope searches inside specific 
+containers.
+
+6.Difference Between querySelector() and querySelectorAll()
+Return Value:
+querySelector() returns a single element—specifically, the first element in the document that matches the specified CSS selector. If no match is found, it returns null.
+querySelectorAll() returns a NodeList containing all elements in the document that match the specified CSS selector. If no 
+matches are found, it returns an empty NodeList.
+
+How to Work with Results:
+With querySelector(), you can directly modify or access properties on the returned element object 
+(for example, element.style.color = 'red').With querySelectorAll(), because it returns a collection of elements, you cannot
+ modify properties directly on the list. You must iterate over the collection using a loop or .forEach() method to access and modify individual elements (for example, nodes.forEach(el => el.style.color = 'red')).
+
+7.Difference Between textContent, innerText, and innerHTML
+textContent:
+
+What it does: Returns or sets the plain text content of an element and all of its descendants.
+
+CSS Awareness: It ignores all CSS styling and layout rules. This means it will return text inside <script> and <style> tags, as well as text inside elements that are hidden using display: none.
+
+Performance: It is fast and light on performance because it does not calculate layout styles.
+
+innerText:
+
+What it does: Returns or sets the visible plain text content of an element.
+
+CSS Awareness: It is fully layout-aware and respects CSS styles. It will not return text from elements hidden via 
+display: none or visibility: hidden, and it normalizes white spaces to match how text appears visually on the screen.
+
+Performance: It triggers a browser layout recalculation (reflow) to determine visual visibility, making it slightly slower than
+textContent.
+
+innerHTML:
+
+What it does: Returns or sets the raw HTML markup contained inside an element.
+
+HTML Parsing: Unlike textContent and innerText (which treat input strings strictly as plain text), innerHTML parses input strings as real HTML elements. Assigning element.innerHTML = '<strong>Text</strong>' will actually render bold styled HTML text instead of showing the tag characters literally.
+
+Security Note: Inserting untrusted string input into innerHTML creates a major security vulnerability known as Cross-Site 
+Scripting (XSS).
+
+
+
+8.Direct Inline Styles (element.style)
+You can access the style property of an element to set specific CSS attributes directly. JavaScript uses camelCase naming for 
+CSS properties that normally have hyphens (for example, background-color becomes backgroundColor).
