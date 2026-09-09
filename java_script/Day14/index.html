@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #para {
+  
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+
+    #para.show {
+        opacity: 1;
+    }
+
+    #box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+
+    .green {
+        background-color: green !important
+    }
+
+    </style>
+</head>
+<body>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, quae?</p>
+    <button id="btn">Show</button>
+<hr>
+
+    <div id="box">
+    </div>
+    <button id="btn1">click</button>
+
+    <script src="assets/index.js"></script>
+    
+</body>
+</html>

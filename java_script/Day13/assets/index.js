@@ -15,6 +15,7 @@ buttons.addEventListener("click", function(){
     heading2.style.color="green";
     heading2.style.fontSize="60px"
     heading2.style.backgroundColor="orange";
+    
 
 });
 
