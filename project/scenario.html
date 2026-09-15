@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-page="scenario">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2030 // The Breaking Point — 2030: The Last Developer?</title>
+  <meta name="description" content="Hypothetical scenario simulation: what if traditional IT jobs shrink. Not a forecast.">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/scenario.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="micro">Research exhibition</span>
+      <strong>2030: The Last Developer?</strong>
+    </a>
+    <nav aria-label="Exhibition progress">
+      <ol class="progress">
+        <li><a href="index.html">01 Industry</a></li>
+        <li><a href="scenario.html" aria-current="page">02 Scenario</a></li>
+        <li><a href="solutions.html">03 Solution</a></li>
+      </ol>
+    </nav>
+    <p class="header-meta micro">Scenario data</p>
+  </header>
+
+  <main id="main">
+    <header class="hero wrap">
+      <p class="watermark">Scenario simulation — not a forecast</p>
+      <h1 class="scenario-hero-title"><span class="micro">What if</span> traditional IT jobs disappear?</h1>
+      <p class="lede">A stress test of an extreme hypothetical: AI and automation significantly reduce traditional IT work. This page asks what would happen if that became possible—not whether it definitely will.</p>
+    </header>
+
+    <section class="wrap" id="disclaimer">
+      <div class="section-kicker"><p class="micro">00</p><p class="micro">Disclaimer</p></div>
+      <h2>This is a designed scenario</h2>
+      <div class="disclaimer">
+        <p class="stamp">Illustrative scenario data</p>
+        <p>Every index, funnel count, and survey percentage on this page is invented for the exhibition. They are not observed labor statistics, not a poll, and not a forecast. Canonical copy for reviewers: <code>data/scenario-illustrative.json</code>.</p>
+        <p><span class="evidence evidence-scenario">SCENARIO</span> Extreme automation of traditional IT tasks. <span class="evidence evidence-illustration">ILLUSTRATION</span> All numeric widgets.</p>
+      </div>
+    </section>
+
+    <section class="wrap" id="matrix">
+      <div class="section-kicker"><p class="micro">01</p><p class="micro">Task matrix</p></div>
+      <h2>What can AI automate?</h2>
+      <p class="lede">Classification is analytical, not a guarantee. Even when a tool can perform a step, a human may still own the consequence.</p>
+      <div class="matrix-filters seg" role="group" aria-label="Filter task ownership">
+        <button type="button" data-matrix-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-matrix-filter="do" aria-pressed="false">AI can do</button>
+        <button type="button" data-matrix-filter="assist" aria-pressed="false">AI can assist</button>
+        <button type="button" data-matrix-filter="human" aria-pressed="false">Human still needed</button>
+        <button type="button" data-matrix-filter="account" aria-pressed="false">Human accountability</button>
+      </div>
+      <div class="table-wrap">
+        <table class="data">
+          <caption class="micro">Possible task split under a high-automation scenario</caption>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>AI can do</th>
+              <th>AI can assist</th>
+              <th>Human still needed</th>
+              <th>Human accountability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-own="do"><td>Boilerplate code</td><td>Often</td><td>Yes</td><td>For fit and style</td><td>Always — who shipped it?</td></tr>
+            <tr data-own="do"><td>Simple scripts</td><td>Often</td><td>Yes</td><td>For edge cases</td><td>Always</td></tr>
+            <tr data-own="assist"><td>Documentation</td><td>First draft</td><td>Yes</td><td>Accuracy vs. the system</td><td>Always</td></tr>
+            <tr data-own="assist"><td>Basic testing / routine QA</td><td>Many cases</td><td>Yes</td><td>Risk-based strategy</td><td>Always</td></tr>
+            <tr data-own="assist"><td>Basic bug fixing</td><td>Lint-level</td><td>Yes</td><td>Root cause in production</td><td>Always</td></tr>
+            <tr data-own="do"><td>L1 technical support</td><td>Common intents</td><td>Yes</td><td>Angry, novel, or unsafe cases</td><td>Always</td></tr>
+            <tr data-own="do"><td>Repetitive maintenance</td><td>Some patches</td><td>Yes</td><td>Change control</td><td>Always</td></tr>
+            <tr data-own="assist"><td>Data processing</td><td>Pipelines</td><td>Yes</td><td>Schema and consent</td><td>Always</td></tr>
+            <tr data-own="assist"><td>Basic UI generation</td><td>Layouts</td><td>Yes</td><td>Accessibility and brand</td><td>Always</td></tr>
+            <tr data-own="human"><td>Architecture / ethics / incidents</td><td>Suggestions only</td><td>Partial</td><td>Yes</td><td>Named owner</td></tr>
+            <tr data-own="account"><td>Ship decision</td><td>No</td><td>Decision support</td><td>Yes</td><td>Cannot be empty</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="wrap" id="dst">
+      <div class="section-kicker"><p class="micro">02</p><p class="micro">Job change</p></div>
+      <h2>Disappear vs shrink vs transform</h2>
+      <div class="seg" role="group" aria-label="Change type">
+        <button type="button" data-dst="disappear" aria-pressed="true">Disappear</button>
+        <button type="button" data-dst="shrink" aria-pressed="false">Shrink</button>
+        <button type="button" data-dst="transform" aria-pressed="false">Transform</button>
+      </div>
+      <article data-dst-panel="disappear" class="panel">
+        <h3>Disappear — mostly tasks, not whole professions as a fact</h3>
+        <p><span class="evidence evidence-scenario">SCENARIO</span> Heavy automation of boilerplate, template UIs, and copy-paste integrations. Occupations rarely vanish overnight; <em>tasks inside them</em> can. Claiming “the developer disappears” is not this exhibition’s claim.</p>
+      </article>
+      <article data-dst-panel="shrink" class="panel" hidden>
+        <h3>Shrink — fewer seats for the same title</h3>
+        <p>If one person plus tools can cover what three juniors did, organizations <em>may</em> hire fewer people for routine CRUD, L1, and checkbox QA. Headcount is a management choice, not a law of physics.</p>
+      </article>
+      <article data-dst-panel="transform" class="panel" hidden>
+        <h3>Transform — same badge, different day</h3>
+        <p>Remaining engineers, testers, and analysts could become directors, reviewers, integrators, and incident owners. The job title can stay while the skill mix rotates.</p>
+      </article>
+    </section>
+
+    <section class="wrap" id="junior">
+      <div class="section-kicker"><p class="micro">03</p><p class="micro">Centerpiece</p></div>
+      <h2>The junior developer problem</h2>
+      <p class="lede">If AI handles many beginner-level tasks, how do students gain their first experience?</p>
+      <ol class="junior-chain">
+        <li>Students</li>
+        <li>Internships</li>
+        <li>Junior jobs</li>
+        <li>Experience</li>
+        <li>Senior roles</li>
+      </ol>
+      <p class="question">If the first step becomes smaller, how does the next generation reach the top?</p>
+      <p>Seniors were once juniors who were allowed to do bounded work. A high-automation scenario can hollow that ramp even if senior demand stays. That is the stress-test, not a prediction.</p>
+    </section>
+
+    <section class="wrap" id="slider">
+      <div class="section-kicker"><p class="micro">04</p><p class="micro">Stress test</p></div>
+      <h2>Automation severity</h2>
+      <p class="lede">Move the control. Only illustrative indexes change. They are not forecasts.</p>
+      <div class="range-wrap">
+        <label class="micro" for="severity">Scenario severity · current <span id="severity-readout">LOW</span></label>
+        <input id="severity" type="range" min="1" max="3" step="1" value="1">
+        <div class="range-labels"><span>Low</span><span>Medium</span><span>High</span></div>
+      </div>
+      <p class="live" id="severity-live" aria-live="polite"></p>
+      <div id="severity-metrics" class="metric-grid"></div>
+    </section>
+
+    <section class="wrap" id="funnel-sec">
+      <div class="section-kicker"><p class="micro">05</p><p class="micro">Funnel</p></div>
+      <h2>Junior developer funnel</h2>
+      <p class="stamp">Illustrative scenario</p>
+      <p>Fictional counts. The same invented cohort (400 “students”) meets a narrower neck as severity rises. Linked to the slider above.</p>
+      <p class="live" id="funnel-live" aria-live="polite"></p>
+      <div id="funnel" class="funnel"></div>
+    </section>
+
+    <section class="wrap" id="org">
+      <div class="section-kicker"><p class="micro">06</p><p class="micro">Firm</p></div>
+      <h2>Before vs after — a hypothetical mid-size software company</h2>
+      <p>Not a real org chart. A teaching sketch of role mix.</p>
+      <div class="org-switch seg" role="group">
+        <button type="button" data-org="before" aria-pressed="true">Before</button>
+        <button type="button" data-org="after" aria-pressed="false">After high automation</button>
+      </div>
+      <div id="org-grid" class="org-grid"></div>
+    </section>
+
+    <section class="wrap" id="own">
+      <div class="section-kicker"><p class="micro">07</p><p class="micro">Ownership</p></div>
+      <h2>AI vs human task ownership</h2>
+      <p>Even if AI performs a task, someone may still need to own the decision and the harm.</p>
+      <div class="seg" role="group" aria-label="Highlight a development task">
+        <button type="button" class="choice" data-own-focus="spec">Specify</button>
+        <button type="button" class="choice" data-own-focus="gen">Generate</button>
+        <button type="button" class="choice" data-own-focus="review">Review</button>
+        <button type="button" class="choice" data-own-focus="ship">Ship</button>
+        <button type="button" class="choice" data-own-focus="inc">Incident</button>
+      </div>
+      <div class="table-wrap">
+        <table class="data" id="own-table">
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>AI leads</th>
+              <th>AI assists</th>
+              <th>Human leads</th>
+              <th>Human accountability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-task="spec"><td>Specify the problem</td><td>No</td><td>Research drafts</td><td>Yes</td><td>Product + engineering</td></tr>
+            <tr data-task="gen"><td>Generate code / UI</td><td>Possible</td><td>Yes</td><td>Constraints</td><td>Author of the PR</td></tr>
+            <tr data-task="review"><td>Review</td><td>Lint / tests</td><td>Yes</td><td>Judgment</td><td>Reviewer</td></tr>
+            <tr data-task="ship"><td>Release</td><td>No</td><td>Checklists</td><td>Yes</td><td>Release owner</td></tr>
+            <tr data-task="inc"><td>Incident response</td><td>Triage help</td><td>Yes</td><td>Yes</td><td>On-call / exec</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="wrap" id="ripples">
+      <div class="section-kicker"><p class="micro">08</p><p class="micro">Ripples</p></div>
+      <h2>Economic and social effects</h2>
+      <p class="lede">Possible effects—not measured outcomes. Benefits and risks can arrive together.</p>
+      <div class="grid-2">
+        <article class="panel"><h3>Employment &amp; salaries</h3><p>Some roles could pay more if scarce (evaluation, security). Entry wages could compress if supply of graduates meets fewer seats.</p></article>
+        <article class="panel"><h3>Graduates &amp; education</h3><p>Degrees may matter less than demonstrated specification and review. Internships could become the bottleneck.</p></article>
+        <article class="panel"><h3>Firms &amp; productivity</h3><p>Smaller teams might ship more. Inference cost, liability, and brand risk could offset cheap drafts.</p></article>
+        <article class="panel"><h3>Inequality &amp; access</h3><p>Those with tools, English, and capital may pull away from those without. Public access is a political choice.</p></article>
+        <article class="panel"><h3>Skill &amp; atrophy</h3><p>Practice is how juniors become seniors. If practice work is fully automated, craft can thin.</p></article>
+        <article class="panel"><h3>Accountability &amp; mental load</h3><p>Reviewing endless generated work can exhaust. Blame may concentrate on fewer named humans.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="plusminus">
+      <div class="section-kicker"><p class="micro">09</p><p class="micro">Balance</p></div>
+      <h2>Positive vs negative possibilities</h2>
+      <div class="split-plus">
+        <article class="panel">
+          <p class="micro">Potential benefits</p>
+          <ul>
+            <li>Higher productivity</li>
+            <li>Lower software costs for some products</li>
+            <li>Faster iteration</li>
+            <li>Small teams building large surfaces</li>
+            <li>Wider access to drafting tools</li>
+            <li>New kinds of work (eval, audit, safety)</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <p class="micro">Potential risks</p>
+          <ul>
+            <li>Entry-level shortage</li>
+            <li>Unequal access</li>
+            <li>Skill atrophy</li>
+            <li>Economic inequality</li>
+            <li>Overdependence on vendors</li>
+            <li>Accountability gaps and power concentration</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="emerge">
+      <div class="section-kicker"><p class="micro">10</p><p class="micro">Emergence</p></div>
+      <h2>Jobs that may emerge</h2>
+      <p>Examples of complementary roles that <em>could</em> appear if generation is cheap and mistakes are expensive.</p>
+      <div class="grid-2">
+        <article class="panel"><h3>AI evaluator</h3><p>Designs tests that tell a team when a model is good enough—and when it is not.</p></article>
+        <article class="panel"><h3>AI workflow designer</h3><p>Decides which steps to automate and which exceptions stay human.</p></article>
+        <article class="panel"><h3>AI auditor</h3><p>Independent review of data, claims, and controls.</p></article>
+        <article class="panel"><h3>AI safety specialist</h3><p>Reduces misuse and high-impact failure modes in agents and tools.</p></article>
+        <article class="panel"><h3>AI governance specialist</h3><p>Turns policy into logs, roles, and stop-buttons.</p></article>
+        <article class="panel"><h3>AI cybersecurity defender</h3><p>Defends models, prompts, and generated supply chains.</p></article>
+        <article class="panel"><h3>Human–AI interaction designer</h3><p>Makes uncertainty visible instead of fake confidence.</p></article>
+        <article class="panel"><h3>Domain + AI specialist</h3><p>Healthcare, finance, climate, education: the error is domain-shaped.</p></article>
+        <article class="panel"><h3>AI compliance specialist</h3><p>Maps systems to rules that already exist or may arrive.</p></article>
+        <article class="panel"><h3>AI systems supervisor</h3><p>Owns the plant: cost, quality, incidents.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="survey">
+      <div class="section-kicker"><p class="micro">11</p><p class="micro">Dashboard</p></div>
+      <h2>Hypothetical survey</h2>
+      <div class="survey-shell">
+        <p class="stamp">Illustrative scenario survey</p>
+        <h3>Attitudes in a fictional sample</h3>
+        <p id="survey-caption">Fictional exhibition sample. Not a real-world survey. Do not cite as research.</p>
+        <div class="grid-2">
+          <label>Question
+            <select id="survey-q">
+              <option value="worry">Worry about replacement</option>
+              <option value="daily">Daily use</option>
+              <option value="trust">Trust production code</option>
+              <option value="pay">Who pays for reskilling</option>
+              <option value="oversight">Oversight required</option>
+            </select>
+          </label>
+          <label>Group
+            <select id="survey-g">
+              <option value="students">Students</option>
+              <option value="developers">Developers</option>
+              <option value="managers">Hiring managers</option>
+            </select>
+          </label>
+        </div>
+        <div id="survey-chart" class="chart-row"></div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <p class="micro">Leads to the rebuild</p>
+      <h2 class="final-q">If AI can write the code, what should humans own?</h2>
+    </section>
+
+    <nav class="pager wrap" aria-label="Story pager">
+      <a href="index.html"><span>Previous · 01 Industry</span>Return to the observatory</a>
+      <a class="next" href="solutions.html"><span>Next · 03 Solution</span>Enter the rebuild lab</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p class="micro">Not a forecast</p>
+    <p>Numeric widgets on this page are exhibition fiction. Do not quote them as research.</p>
+  </footer>
+  <script src="js/evidence.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scenario-controls.js"></script>
+</body>
+</html>

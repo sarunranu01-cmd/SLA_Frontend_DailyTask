@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day18t</title>
+</head>
+<body>
+    
+<script>
+const function1=()=> {
+    console.log("javascript");
+};
+function calldisplay(callback){
+    callback();
+}
+calldisplay(function1);
+
+// ---------------------------------------------------
+// const promise=new Promise((resolve, reject) => {
+//     if(condition){
+//         resolve("Success");
+//     }else{
+//         reject("Error");
+//     }
+// });
+
+// ----------------------------------------
+    const rain=new Promise((resolve, reject) => {
+        if (true){
+            resolve("comming");
+        }else{
+            reject("not comming");
+        }
+    });
+    rain.then((msg) => {
+        console.log(msg);
+    }).catch((error) => {
+        console.log(error);
+    });
+// ------------------------------------------
+const promise = new Promise((resolve, reject) => {
+
+    resolve("Success");
+
+});
+
+async function display() {
+
+    const result = await promise;
+
+    console.log(result);
+
+}
+
+display();
+// -------------------------------------------
+fetch("https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=815461303151&hvpos=&hvnetw=g&hvrand=11330580664195051009&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9183535&hvtargid=kwd-10573980&hydadcr=14453_2462831&mcid=4c22dcdee2bf3a71b0b832c5c4ba9c17&hvocijid=11330580664195051009--&hvexpln=nav&gad_source=1")
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+</script>
+</body>
+</html>

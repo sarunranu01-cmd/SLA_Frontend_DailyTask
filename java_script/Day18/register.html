@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<body>
+
+    <form id="f1">
+        <input type="text" id="name" placeholder="Enter the name">
+        <input type="email" id="email" placeholder="Enter the email">
+        <input type="password" id="password" placeholder="Enter the password">
+        <button id="btn">submit</button>
+
+    </form>
+
+    <script>
+        const form = document.getElementById("f1");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const inputname = document.getElementById("name").value;
+            const inputemail = document.getElementById("email").value;
+            const inputpass = document.getElementById("password").value;
+            const person = {
+                name: inputname,
+                email: inputemail,
+                password: inputpass
+            };
+            localStorage.setItem("user", JSON.stringify(person));
+            alert("Registration successful!");
+            window.location.href = "index.html";
+
+        });
+    </script>
+
+</body>
+</html>

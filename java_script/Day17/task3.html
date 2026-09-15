@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #showproduct{
+            width:200px;
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 20px;
+            border: black 2px solid;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">product Name:</label><input type="text" id="name" placeholder="Enter the name">
+        <label for="">product price:</label><input type="text" id="price" placeholder="Enter the price">
+        <label for="">product Category:</label><input type="text" id="Category" placeholder="Enter the Category">
+        <button id="btn">click</button>
+        <div id="showproduct"></div>
+    </form>
+    <script>
+        const inputName=document.getElementById("name")
+        const inputprice=document.getElementById("price");
+        const inputcategory=document.getElementById("Category")
+        const showproduct=document.getElementById("showproduct")
+        const products=[]
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault();
+            const product={
+                name:inputName.value,
+                price:inputprice.value,
+                category:inputcategory.value
+            }
+            products.push(product)
+            showproduct.innerHTML=""
+            products.forEach((product)=>{
+                showproduct.innerHTML+=`
+                <div>
+                    <p>product name:${product.name}</p>
+                    <p>product price:${product.price}</p>
+                    
+                    <p>product category:${product.category}</p>
+                </div>
+                `
+            })
+            inputName.value=""
+            inputprice.value=""
+            inputcategory.value=""
+
+        })
+    </script>
+</body>
+</html>

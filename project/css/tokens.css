@@ -1,0 +1,54 @@
+/* 2030: THE LAST DEVELOPER? — design tokens (this folder only) */
+:root {
+  --ink: #0b0d11;
+  --ink-2: #12151c;
+  --ink-3: #1a1f29;
+  --paper: #e6e1d4;
+  --paper-dim: #b8b3a6;
+  --muted: #8c9188;
+  --line: rgba(230, 225, 212, 0.14);
+  --line-strong: rgba(230, 225, 212, 0.28);
+  --teal: #3ecfc0;
+  --teal-dim: rgba(62, 207, 192, 0.14);
+  --gold: #c4a36a;
+  --amber: #d4a15a;
+  --amber-dim: rgba(212, 161, 90, 0.12);
+  --danger-ink: #c9846a;
+  --focus: #7ef0e4;
+
+  --font-display: "Palatino Linotype", Palatino, "Iowan Old Style", "Times New Roman", serif;
+  --font-body: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "Cascadia Mono", Consolas, "Segoe UI Mono", ui-monospace, monospace;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  --wrap: 72rem;
+  --measure: 68ch;
+  --radius: 2px;
+  --header-h: 4.25rem;
+
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+html[data-page="scenario"] {
+  --accent: var(--amber);
+  --accent-dim: var(--amber-dim);
+}
+
+html[data-page="industry"] {
+  --accent: var(--teal);
+  --accent-dim: var(--teal-dim);
+}
+
+html[data-page="solutions"] {
+  --accent: var(--gold);
+  --accent-dim: rgba(196, 163, 106, 0.14);
+}

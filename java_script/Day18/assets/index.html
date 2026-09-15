@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <form id="login">
+
+        <input type="email" id="email" placeholder="Enter the email" required>
+        <input type="password" id="password" placeholder="Enter the password" required>
+        <button type="submit">Login</button>
+
+    </form>
+
+    <p>
+        <a href="register.html">Register</a>
+    </p>
+
+    <script>
+
+        const form = document.getElementById("login");
+
+        form.addEventListener("submit", (e) => {
+
+            e.preventDefault();
+
+            const inputemail = document.getElementById("email").value;
+
+            const inputpass = document.getElementById("password").value;
+
+            const getvalue = JSON.parse(localStorage.getItem("user"));
+
+            if (getvalue === null) {
+
+                alert("Please register first!");
+
+                return;
+            }
+
+            if (
+                inputemail === getvalue.email &&
+                inputpass === getvalue.password
+            ) {
+
+                alert("Login successful!");
+
+                localStorage.setItem("LoggedIn", "true");
+
+                window.location.href = "dashboard.html";
+
+            } else {
+
+                alert("Invalid email or password!");
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

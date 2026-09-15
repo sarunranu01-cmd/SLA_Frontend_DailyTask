@@ -1,0 +1,182 @@
+html[data-page="solutions"] body {
+  background:
+    linear-gradient(180deg, rgba(36, 30, 18, 0.45), transparent 30%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 47px,
+      rgba(230, 225, 212, 0.03) 47px,
+      rgba(230, 225, 212, 0.03) 48px
+    ),
+    var(--ink);
+}
+
+html[data-page="solutions"] .hero {
+  padding-top: 4.5rem;
+}
+
+.pairs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.pair {
+  border: 1px solid var(--line);
+  padding: 1rem;
+  background: var(--ink-2);
+}
+
+.pair strong {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.45rem;
+}
+
+.dna {
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 1fr);
+  gap: 1.1rem;
+}
+
+.dna-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.dna-nav button {
+  text-align: left;
+}
+
+.skill-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.skill-list button {
+  text-align: left;
+  width: 100%;
+}
+
+.path-grid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.path-grid article {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.path-grid .arrow {
+  font-family: var(--font-mono);
+  color: var(--gold);
+  letter-spacing: 0.08em;
+}
+
+.pipeline {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+.pipeline button {
+  width: 100%;
+}
+
+.career-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.career-form fieldset {
+  border: 1px solid var(--line);
+  margin: 0;
+  padding: 0.85rem;
+}
+
+.career-form legend {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0 0.35rem;
+}
+
+.career-form label {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+  min-height: 44px;
+  color: var(--paper-dim);
+}
+
+.career-out {
+  border: 1px dashed var(--gold);
+  padding: 1.15rem;
+  background: rgba(196, 163, 106, 0.08);
+  min-height: 12rem;
+}
+
+.roadmap {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.roadmap button {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.roadmap button span:first-child {
+  font-family: var(--font-mono);
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+
+.finale {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.finale h2 {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  max-width: 16ch;
+}
+
+@media (max-width: 960px) {
+  .pairs,
+  .dna,
+  .career-form,
+  .pipeline,
+  .path-grid article {
+    grid-template-columns: 1fr;
+  }
+
+  .dna-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .path-grid .arrow {
+    display: none;
+  }
+
+  .roadmap button {
+    grid-template-columns: 1fr;
+  }
+}

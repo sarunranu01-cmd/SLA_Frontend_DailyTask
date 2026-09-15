@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-page="industry">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2030 // The New IT — 2030: The Last Developer?</title>
+  <meta name="description" content="Future Observatory: how the IT industry could evolve by 2030 based on current trends. Not a forecast.">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/industry.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="micro">Research exhibition</span>
+      <strong>2030: The Last Developer?</strong>
+    </a>
+    <nav aria-label="Exhibition progress">
+      <ol class="progress">
+        <li><a href="index.html" aria-current="page">01 Industry</a></li>
+        <li><a href="scenario.html">02 Scenario</a></li>
+        <li><a href="solutions.html">03 Solution</a></li>
+      </ol>
+    </nav>
+    <p class="header-meta micro">Horizon 2030</p>
+  </header>
+
+  <main id="main">
+    <header class="hero wrap">
+      <p class="year-line micro">Future observatory · Briefing 01</p>
+      <p class="micro">2030</p>
+      <h1>The New IT</h1>
+      <p class="lede">Three years is not far away. But technology can change a lot in three years.</p>
+      <p class="question">What happens when software stops being something humans only write — and becomes something humans increasingly direct?</p>
+    </header>
+
+    <section class="wrap" id="why">
+      <div class="section-kicker">
+        <p class="micro">01</p>
+        <p class="micro">Why 2030?</p>
+      </div>
+      <h2>A near horizon, not a distant myth</h2>
+      <div class="prose">
+        <p><span class="evidence evidence-fact">FACT</span> Students entering computing programmes in the mid-2020s will be early-career workers in 2030. The horizon is a workforce cycle, not science fiction.</p>
+        <p><span class="evidence evidence-trend">TREND</span> Generative AI is already inside editors, support tools, and office software. The practical question is how far assistance goes, who reviews it, and who is liable when it fails—not whether the tools exist.</p>
+        <p><span class="evidence evidence-trend">TREND</span> Automation has long targeted routine digital work. Language models widen the set of tasks that look “routine enough” to draft: boilerplate code, first-pass documents, L1 replies. That does not automatically delete occupations; it can change the mix of tasks inside them.</p>
+        <p><span class="evidence evidence-projection">PROJECTION</span> Cloud, specialized chips, energy, cybersecurity, and robotics condition what is even feasible. A model cannot scale if inference is too expensive, too insecure, or too physically unconstrained. 2030 IT is therefore a stack problem, not only a chatbot problem.</p>
+        <p>This page synthesizes current trajectories with scenario thinking. It does not claim that any company will dominate 2030, or that AI will definitely eliminate jobs.</p>
+      </div>
+    </section>
+
+    <section class="wrap" id="timeline">
+      <div class="section-kicker">
+        <p class="micro">02</p>
+        <p class="micro">Horizon timeline</p>
+      </div>
+      <h2>2026 → 2028 → 2030</h2>
+      <p class="lede">Possible stages along current trajectories. Nothing here is guaranteed.</p>
+      <div class="horizon-controls seg" role="group" aria-label="Select horizon year">
+        <button type="button" data-year="2026" aria-pressed="true">2026 · current</button>
+        <button type="button" data-year="2028" aria-pressed="false">2028 · possible acceleration</button>
+        <button type="button" data-year="2030" aria-pressed="false">2030 · possible mature adoption</button>
+      </div>
+      <p class="live" id="horizon-live" aria-live="polite"></p>
+      <div id="horizon-grid" class="horizon-grid"></div>
+    </section>
+
+    <section class="wrap" id="constellation">
+      <div class="section-kicker">
+        <p class="micro">03</p>
+        <p class="micro">Technology constellation</p>
+      </div>
+      <h2>A map of the 2030 stack</h2>
+      <p class="lede">Explore nodes. Each briefing separates today, direction, a possible 2030, and uncertainty. On small screens the map becomes a list of the same signals.</p>
+      <p class="live" id="constellation-live" aria-live="polite"></p>
+      <div class="constellation">
+        <div id="starfield" class="starfield" role="group" aria-label="Technology nodes"></div>
+        <article id="star-briefing" class="panel briefing"></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="stack">
+      <div class="section-kicker">
+        <p class="micro">04</p>
+        <p class="micro">Ecosystem</p>
+      </div>
+      <h2>Who shapes the technology stack?</h2>
+      <p class="lede">Influence means a role in the stack—not a prediction of 2030 market control. No share figures are invented here.</p>
+      <div class="stack-list">
+        <article class="panel">
+          <p class="micro">AI companies</p>
+          <h3>Model and product layer</h3>
+          <p>Organizations such as OpenAI, Google DeepMind, Anthropic, Meta, Mistral, and others currently publish or productize foundation models. <span class="evidence evidence-fact">FACT</span> They influence interfaces, safety policies, and what “default generation” looks like in 2026. They do not automatically own 2030.</p>
+        </article>
+        <article class="panel">
+          <p class="micro">Cloud providers</p>
+          <h3>Delivery, identity, regions</h3>
+          <p>Amazon Web Services, Microsoft Azure, Google Cloud, and regional providers rent compute, storage, and identity. <span class="evidence evidence-trend">TREND</span> Training and inference already concentrate demand on their GPUs and power contracts. Sovereign and hybrid variants may grow; that is a trajectory, not a crowned winner.</p>
+        </article>
+        <article class="panel">
+          <p class="micro">Chip companies</p>
+          <h3>Silicon constraint</h3>
+          <p>NVIDIA, AMD, Intel, TSMC, ARM, and others sit under the software story. <span class="evidence evidence-fact">FACT</span> Accelerator supply and fabrication capacity already shape who can train large systems. Software strategy follows silicon access more than slogans.</p>
+        </article>
+        <article class="panel">
+          <p class="micro">Enterprise software</p>
+          <h3>Where work actually happens</h3>
+          <p>Firms such as Microsoft, Salesforce, SAP, ServiceNow, and Atlassian embed assistants into the systems employees already log into. Influence here is workflow, records, and compliance—not only demos.</p>
+        </article>
+        <article class="panel">
+          <p class="micro">Consumer technology</p>
+          <h3>Devices and attention</h3>
+          <p>Apple, Samsung, Google, Meta, and similar firms shape phones, headsets, and default apps. Spatial computing and on-device models, if they spread, will travel through this layer.</p>
+        </article>
+        <article class="panel">
+          <p class="micro">Cybersecurity</p>
+          <h3>Trust vendors and public agencies</h3>
+          <p>Companies such as CrowdStrike, Palo Alto Networks, and Microsoft, plus CERTs and standards bodies, influence detection, identity, and disclosure norms. If generated software volume rises, this layer could matter more, not less.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="fields">
+      <div class="section-kicker">
+        <p class="micro">05</p>
+        <p class="micro">Opportunity fields</p>
+      </div>
+      <h2>Where complementary work could grow</h2>
+      <p class="lede">These are reasons a field could matter—not a guaranteed job board for 2030.</p>
+      <div class="grid-2">
+        <article class="panel"><h3>AI operations</h3><p>Serving, evaluating, and cost-controlling models is operational work. If models become infrastructure, someone still runs the plant.</p></article>
+        <article class="panel"><h3>AI evaluation</h3><p>Capability without tests is theatre. Evaluation design could be how organizations decide what is safe enough to use.</p></article>
+        <article class="panel"><h3>AI governance</h3><p>Policy, logging, and role design turn principles into daily practice—especially where regulation already exists.</p></article>
+        <article class="panel"><h3>Cybersecurity</h3><p>Faster code can mean faster defects and new attack paths (including against models themselves).</p></article>
+        <article class="panel"><h3>AI safety</h3><p>Misuse, loss of control in agents, and high-stakes errors are research and engineering problems, not only slogans.</p></article>
+        <article class="panel"><h3>AI auditing</h3><p>Independent checks of data, evals, and claims could become as ordinary as financial audit is for accounts.</p></article>
+        <article class="panel"><h3>Human-centered automation</h3><p>Designing which steps stay human prevents “automate first, notice harm later.”</p></article>
+        <article class="panel"><h3>Robotics</h3><p>Physical work still needs integration, safety cases, and maintenance in structured environments.</p></article>
+        <article class="panel"><h3>Spatial computing</h3><p>If overlays become professional tools, interaction design and accessibility become IT-adjacent crafts.</p></article>
+        <article class="panel"><h3>Quantum-safe security</h3><p>Crypto-migration planning can matter even if useful quantum computers remain narrow. This is risk management, not gadget fandom.</p></article>
+        <article class="panel"><h3>AI + healthcare / finance / education</h3><p>Domain errors are costly. Specialists who can refuse a bad suggestion may be more valuable than generic prompt users.</p></article>
+        <article class="panel"><h3>AI + climate / energy</h3><p>Data-center power and optimization of energy systems are already coupled to digital infrastructure. That coupling could tighten.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="worker">
+      <div class="section-kicker">
+        <p class="micro">06</p>
+        <p class="micro">The 2030 worker</p>
+      </div>
+      <h2>From typing to directing</h2>
+      <div class="compare">
+        <article class="panel"><p class="micro">Traditional</p><h3>Writing code</h3><p>Value as lines produced.</p></article>
+        <p class="vs">→</p>
+        <article class="panel"><p class="micro">Possible combination</p><h3>Designing systems + directing AI + reviewing output</h3><p>Value as specification, integration, and accountable release.</p></article>
+      </div>
+      <div class="compare">
+        <article class="panel"><p class="micro">Traditional</p><h3>Memorizing tools</h3></article>
+        <p class="vs">→</p>
+        <article class="panel"><p class="micro">Possible combination</p><h3>Understanding concepts + adapting quickly</h3></article>
+      </div>
+      <div class="compare">
+        <article class="panel"><p class="micro">Traditional</p><h3>Manual testing</h3></article>
+        <p class="vs">→</p>
+        <article class="panel"><p class="micro">Possible combination</p><h3>Test strategy + verification + AI-assisted testing</h3></article>
+      </div>
+      <div class="compare">
+        <article class="panel"><p class="micro">Traditional</p><h3>Only technical knowledge</h3></article>
+        <p class="vs">→</p>
+        <article class="panel"><p class="micro">Possible combination</p><h3>Technical + human + business + trust skills</h3></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="day">
+      <div class="section-kicker">
+        <p class="micro">07</p>
+        <p class="micro">A day in 2030</p>
+      </div>
+      <h2>Four possible lives</h2>
+      <p class="lede">Selector below is scenario fiction for exhibition. It is not a prediction of your day.</p>
+      <div class="seg" role="group" aria-label="Choose a persona">
+        <button type="button" data-day="student" aria-pressed="true">Student</button>
+        <button type="button" data-day="developer" aria-pressed="false">Developer</button>
+        <button type="button" data-day="owner" aria-pressed="false">Business owner</button>
+        <button type="button" data-day="nonit" aria-pressed="false">Non-IT worker</button>
+      </div>
+      <p class="live" id="day-live" aria-live="polite"></p>
+      <div id="day-board" class="day-board briefing"></div>
+    </section>
+
+    <section class="wrap" id="taxonomy">
+      <div class="section-kicker">
+        <p class="micro">08</p>
+        <p class="micro">Classification</p>
+      </div>
+      <h2>Likely / possible / uncertain</h2>
+      <div class="taxonomy">
+        <article class="panel">
+          <header class="likely">Likely</header>
+          <p>Supported by current deployment: wider AI assistance in writing and coding; cloud as a default delivery layer; cybersecurity remaining first-order; humans remaining legally and operationally accountable for shipped software in most jurisdictions.</p>
+        </article>
+        <article class="panel">
+          <header class="possible">Possible</header>
+          <p>Bounded agents in support and test loops; fewer entry-level seats for boilerplate work; studio-style education; quantum-safe migration programmes; professional AR in training and field work.</p>
+        </article>
+        <article class="panel">
+          <header class="uncertain">Uncertain</header>
+          <p>Full collapse of junior employment; general humanoid labor; everyday quantum laptops; a single firm “owning” 2030; artificial general intelligence on a calendar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap sources" id="method">
+      <div class="section-kicker">
+        <p class="micro">09</p>
+        <p class="micro">Methodology</p>
+      </div>
+      <h2>How did we think about 2030?</h2>
+      <p class="lede">This exhibition combines current technology trends, public industry and policy reports, documented product deployments, and scenario planning. Scenarios are tools for asking “what if,” not forecasts.</p>
+      <ol>
+        <li>Stanford HAI, <em>AI Index Report</em> (annual) — capability, investment, and incident tracking. Used as a FACT/TREND baseline, not a 2030 prophecy.</li>
+        <li>NIST, <em>Artificial Intelligence Risk Management Framework</em> (AI RMF 1.0) — a governance vocabulary (map, measure, manage, govern).</li>
+        <li>World Economic Forum, <em>Future of Jobs</em> reports — employer surveys about skill demand. Treat as TREND/opinion of respondents, not destiny.</li>
+        <li>OECD and ILO publications on AI and work — task-based analysis of automation exposure.</li>
+        <li>IEA commentary on data-centre electricity — energy as a real constraint on scale.</li>
+        <li>Official EU AI Act texts — example of binding public rules already in motion (FACT of law, not of 2030 outcomes).</li>
+      </ol>
+      <p>Where this site shows numbers on the next page, they are labeled <strong>illustrative scenario data</strong> and must not be cited as empirical findings.</p>
+    </section>
+
+    <nav class="pager wrap" aria-label="Story pager">
+      <a class="next" href="scenario.html"><span>Next · 02 Scenario</span>Enter the scenario chamber</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p class="micro">Not a forecast</p>
+    <p>2030: The Last Developer? is a student research exhibition. Page 1 is trend synthesis. Page 2 is a hypothetical stress test. Page 3 is a response atlas. Work only in this project folder.</p>
+  </footer>
+  <script src="js/evidence.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/constellation.js"></script>
+  <script src="js/day-2030.js"></script>
+</body>
+</html>

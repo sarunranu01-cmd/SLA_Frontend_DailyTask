@@ -1,0 +1,90 @@
+{
+  "disclaimer": "All numeric values in this file are fictional exhibition instruments. They are not survey results, forecasts, or observed labor-market statistics.",
+  "label": "ILLUSTRATIVE SCENARIO DATA",
+  "severity": {
+    "low": {
+      "traditionalCoding": 78,
+      "entryLevel": 70,
+      "humanHours": 74,
+      "aiAssisted": 42,
+      "automation": 28
+    },
+    "medium": {
+      "traditionalCoding": 48,
+      "entryLevel": 40,
+      "humanHours": 51,
+      "aiAssisted": 68,
+      "automation": 58
+    },
+    "high": {
+      "traditionalCoding": 18,
+      "entryLevel": 16,
+      "humanHours": 29,
+      "aiAssisted": 88,
+      "automation": 82
+    }
+  },
+  "funnel": {
+    "low": [400, 180, 90, 42],
+    "medium": [400, 140, 48, 18],
+    "high": [400, 110, 22, 6]
+  },
+  "funnelLabels": ["Students", "Applicants", "Interviews", "Entry-level seats"],
+  "survey": {
+    "title": "ILLUSTRATIVE SCENARIO SURVEY",
+    "caption": "Fictional exhibition sample. Not a real-world survey. Do not cite as research.",
+    "nNote": "Scenario sample size (invented): 400 students, 280 developers, 120 hiring managers.",
+    "questions": [
+      {
+        "id": "worry",
+        "text": "How worried are you about AI replacing traditional IT work?",
+        "options": ["Low", "Moderate", "High"],
+        "groups": {
+          "students": [22, 41, 37],
+          "developers": [28, 46, 26],
+          "managers": [18, 49, 33]
+        }
+      },
+      {
+        "id": "daily",
+        "text": "Would you use AI every day at work?",
+        "options": ["No", "Sometimes", "Yes"],
+        "groups": {
+          "students": [8, 27, 65],
+          "developers": [11, 24, 65],
+          "managers": [6, 31, 63]
+        }
+      },
+      {
+        "id": "trust",
+        "text": "Would you trust AI-written production code without extra review?",
+        "options": ["No", "With review only", "Yes"],
+        "groups": {
+          "students": [48, 46, 6],
+          "developers": [61, 35, 4],
+          "managers": [54, 41, 5]
+        }
+      },
+      {
+        "id": "pay",
+        "text": "Who should pay for reskilling?",
+        "options": ["Workers", "Companies", "Shared / public"],
+        "groups": {
+          "students": [12, 39, 49],
+          "developers": [9, 47, 44],
+          "managers": [21, 34, 45]
+        }
+      },
+      {
+        "id": "oversight",
+        "text": "How much human oversight should AI systems require?",
+        "options": ["Minimal", "Task-dependent", "High / always"],
+        "groups": {
+          "students": [7, 58, 35],
+          "developers": [5, 52, 43],
+          "managers": [9, 55, 36]
+        }
+      }
+    ]
+  }
+}

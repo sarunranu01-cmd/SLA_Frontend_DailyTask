@@ -1,0 +1,214 @@
+html[data-page="industry"] .hero {
+  position: relative;
+  padding-top: 4.5rem;
+  min-height: calc(100vh - var(--header-h));
+  display: flex;
+  align-items: center;
+}
+
+html[data-page="industry"] .hero::before {
+  content: "";
+  position: absolute;
+  inset: 8% 8% auto auto;
+  width: min(38vw, 22rem);
+  height: min(38vw, 22rem);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+html[data-page="industry"] .hero::after {
+  content: "";
+  position: absolute;
+  inset: 14% 12% auto auto;
+  width: min(22vw, 12rem);
+  height: min(22vw, 12rem);
+  border: 1px dashed rgba(62, 207, 192, 0.25);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.year-line {
+  font-family: var(--font-mono);
+  letter-spacing: 0.2em;
+  color: var(--teal);
+  margin: 0 0 1rem;
+}
+
+.horizon-controls {
+  margin-bottom: 1.25rem;
+}
+
+.horizon-grid {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 0.6rem 1rem;
+  border: 1px solid var(--line);
+}
+
+.horizon-grid .cat {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--ink-2);
+}
+
+.horizon-grid .cell {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--paper-dim);
+}
+
+.horizon-grid .cell strong {
+  display: block;
+  color: var(--paper);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.constellation {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 1.1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.starfield {
+  position: relative;
+  min-height: 28rem;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(62, 207, 192, 0.06), transparent 55%),
+    var(--ink-2);
+}
+
+.star {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 9.5rem;
+  min-height: 44px;
+  padding: 0.45rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  border: 1px solid var(--line-strong);
+  cursor: pointer;
+}
+
+.star[aria-pressed="true"] {
+  border-color: var(--teal);
+  color: var(--teal);
+  box-shadow: 0 0 0 1px var(--teal);
+}
+
+.star::before {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background: var(--teal);
+  vertical-align: middle;
+}
+
+.briefing dl {
+  margin: 0;
+}
+
+.briefing dt {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.85rem;
+}
+
+.briefing dd {
+  margin: 0.2rem 0 0;
+  color: var(--paper-dim);
+}
+
+.uncertainty {
+  margin-top: 1rem;
+}
+
+.stack-list article {
+  margin-bottom: 0.75rem;
+}
+
+.day-board {
+  border: 1px solid var(--line);
+  padding: 1.2rem;
+  background: var(--ink-2);
+  min-height: 16rem;
+}
+
+.day-board h3 {
+  font-size: 1.5rem;
+}
+
+.taxonomy {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.taxonomy article header {
+  font-family: var(--font-mono);
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.taxonomy .likely { color: var(--teal); }
+.taxonomy .possible { color: var(--gold); }
+.taxonomy .uncertain { color: var(--muted); }
+
+.sources {
+  font-size: 0.92rem;
+}
+
+.sources li {
+  margin-bottom: 0.55rem;
+  color: var(--paper-dim);
+}
+
+@media (max-width: 960px) {
+  html[data-page="industry"] .hero::before,
+  html[data-page="industry"] .hero::after {
+    display: none;
+  }
+
+  .constellation,
+  .taxonomy,
+  .horizon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .starfield {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    gap: 0.45rem;
+    padding: 0.75rem;
+  }
+
+  .star {
+    position: static;
+    transform: none;
+    max-width: none;
+    width: 100%;
+    text-align: left;
+  }
+}

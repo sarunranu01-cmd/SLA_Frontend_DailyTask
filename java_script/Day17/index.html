@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="name" placeholder="Enter the name">
+        <input type="number" id="age" placeholder="Enter the age">
+        <input type="text" id="city" placeholder="Enter the Cityname">
+        <button id="btn">submit</button>
+        <p id="output"> </p>
+    </form>
+
+    <script>
+        const inputName=document.getElementById("name")
+        const inputAge=document.getElementById("age")
+        const inputcity=document.getElementById("city")
+        const btn=document.getElementById("btn");
+        const output=document.getElementById("output")
+        const students=[]
+
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault();
+            const student={
+                name:inputName.value,
+                age:inputAge.value,
+                city:inputcity.value
+            }
+        students.push(student)
+        output.innerHTML=""
+        students.forEach((student)=>{
+            output.innerHTML+=`
+            <div>
+                <h2>student name:${student.name},
+                <h2>student age:${student.age},
+                <h2>student city:${student.city},
+            </div>
+            <hr>`
+            
+        })
+        
+        })
+    </script>
+</body>
+</html>
+
+
+

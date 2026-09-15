@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <h1>dashboard</h1>
+    <div id="dashboard"></div>
+    <button id="logout">Logout</button>
+
+    <script>
+
+        const dashboard = document.getElementById("dashboard");
+        const getvalue = JSON.parse(localStorage.getItem("user"));
+        const LoggedIn = localStorage.getItem("LoggedIn");
+        if (LoggedIn !== "true" || getvalue === null) {
+
+            window.location.href = "index.html";
+
+        } else {
+            dashboard.innerHTML = `
+                <h2>Welcome, ${getvalue.name}</h2>
+                <p>Name: ${getvalue.name}</p>
+                <p>Email: ${getvalue.email}</p>
+            `;
+        }
+        document.getElementById("logout").addEventListener("click", () => {
+            localStorage.removeItem("LoggedIn");
+            window.location.href = "index.html";
+
+        });
+
+    </script>
+
+</body>
+</html>
