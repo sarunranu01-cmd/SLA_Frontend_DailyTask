@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tasks in Node.js & React - Day Wise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+        }
+
+        /* Header Styling */
+        .htaml_heading {
+            background: linear-gradient(135deg, #ffd700, #ffb700);
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .htaml_heading h1 {
+            font-size: 32px;
+            color: #1e293b;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+        }
+
+        .htaml_heading p {
+            margin-top: 6px;
+            font-size: 15px;
+            color: #334155;
+        }
+
+        .back-home {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .back-home a {
+            text-decoration: none;
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 10px 22px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .back-home a:hover {
+            background: #1e293b;
+            color: #ffd700;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Day Filter Navigation Bar */
+        .filter-container {
+            max-width: 1250px;
+            margin: 30px auto 10px;
+            padding: 0 20px;
+        }
+
+        .filter-label {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #64748b;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .day-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-bottom: 15px;
+        }
+
+        .day-btn {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            color: #334155;
+            padding: 10px 18px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            outline: none;
+        }
+
+        .day-btn:hover {
+            background: #dcfce7;
+            border-color: #22c55e;
+            color: #14532d;
+            transform: translateY(-2px);
+        }
+
+        .day-btn.active {
+            background: #1e293b;
+            color: #ffd700;
+            border-color: #1e293b;
+            box-shadow: 0 4px 12px rgba(30, 41, 59, 0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Main Container & Grid */
+        .main-container {
+            max-width: 1250px;
+            margin: 20px auto 60px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        /* Day Card */
+        .day-card {
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .day-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09);
+            border-color: #cbd5e1;
+        }
+
+        .day-card-header {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            padding: 20px 24px;
+            border-bottom: 1px solid #bbf7d0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .day-title-group h2 {
+            font-size: 20px;
+            color: #166534;
+            font-weight: 700;
+        }
+
+        .day-title-group span {
+            font-size: 13px;
+            color: #15803d;
+            font-weight: 500;
+        }
+
+        .task-badge {
+            background: #16a34a;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Task Links List */
+        .task-list {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex-grow: 1;
+        }
+
+        .task-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            color: #1e293b;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .task-link .task-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .task-number {
+            width: 30px;
+            height: 30px;
+            background: #f1f5f9;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            color: #64748b;
+            transition: all 0.25s ease;
+        }
+
+        .task-name {
+            font-size: 15px;
+            color: #334155;
+            font-weight: 600;
+        }
+
+        .task-arrow {
+            font-size: 18px;
+            color: #94a3b8;
+            transition: all 0.25s ease;
+        }
+
+        .task-link:hover {
+            background: #f0fdf4;
+            border-color: #4ade80;
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.15);
+        }
+
+        .task-link:hover .task-number {
+            background: #22c55e;
+            color: #ffffff;
+        }
+
+        .task-link:hover .task-name {
+            color: #166534;
+        }
+
+        .task-link:hover .task-arrow {
+            color: #16a34a;
+            transform: translateX(3px);
+        }
+
+        /* Utility classes */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .htaml_heading {
+                padding: 25px 15px;
+                text-align: left;
+            }
+
+            .htaml_heading h1 {
+                font-size: 24px;
+            }
+
+            .back-home {
+                position: static;
+                transform: none;
+                margin-top: 15px;
+                display: inline-block;
+            }
+
+            .main-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="htaml_heading">
+        <h1>Daily Tasks in Node.js & React</h1>
+        <p>Click on any Day to view its tasks, or click any Task to open it directly</p>
+        <div class="back-home">
+            <a href="../index.html">← Back to Home</a>
+        </div>
+    </header>
+
+    <!-- Day Navigation / Selector -->
+    <section class="filter-container">
+        <div class="filter-label">
+            <span>Select Day:</span>
+        </div>
+        <div class="day-nav">
+            <button class="day-btn active" onclick="filterDay('all', this)">All Days</button>
+            <button class="day-btn" onclick="filterDay('day1', this)">Day 1</button>
+            <button class="day-btn" onclick="filterDay('day2', this)">Day 2</button>
+        </div>
+    </section>
+
+    <!-- Main Container with Day-wise Cards -->
+    <main class="main-container">
+
+        <!-- Day 1 -->
+        <article class="day-card" data-day="day1">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Day 01</h2>
+                    <span>Environment Setup & React Theory</span>
+                </div>
+                <span class="task-badge">2 Tasks</span>
+            </div>
+            <div class="task-list">
+                <a href="../Nodejs/Day1/reactNotes.txt" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: React Fundamentals & Virtual DOM Notes</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+                <a href="../Nodejs/Day1/newproject/index.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">2</span>
+                        <span class="task-name">Task 2: Vite + React Starter Project</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Day 2 -->
+        <article class="day-card" data-day="day2">
+            <div class="day-card-header">
+                <div class="day-title-group">
+                    <h2>Day 02</h2>
+                    <span>Reusable UI Components & Props</span>
+                </div>
+                <span class="task-badge">1 Project</span>
+            </div>
+            <div class="task-list">
+                <a href="../Nodejs/Day2/task1/index.html" class="task-link">
+                    <div class="task-info">
+                        <span class="task-number">1</span>
+                        <span class="task-name">Task 1: Component Architecture (Card, Box & Button)</span>
+                    </div>
+                    <span class="task-arrow">→</span>
+                </a>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Interactive Filtering Script -->
+    <script>
+        function filterDay(selectedDay, buttonElement) {
+            // Update active state on buttons
+            const buttons = document.querySelectorAll('.day-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if (buttonElement) {
+                buttonElement.classList.add('active');
+            }
+
+            // Filter the day cards
+            const cards = document.querySelectorAll('.day-card');
+            cards.forEach(card => {
+                const cardDay = card.getAttribute('data-day');
+                if (selectedDay === 'all' || cardDay === selectedDay) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // Update URL hash without jumping
+            if (selectedDay === 'all') {
+                history.replaceState(null, null, window.location.pathname);
+            } else {
+                history.replaceState(null, null, '#' + selectedDay);
+            }
+        }
+
+        // Handle URL hash on initial load (e.g. nodejs.html#day2)
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '').toLowerCase();
+            if (hash) {
+                const targetBtn = Array.from(document.querySelectorAll('.day-btn'))
+                    .find(btn => btn.getAttribute('onclick') && btn.getAttribute('onclick').includes("'" + hash + "'"));
+                if (targetBtn) {
+                    filterDay(hash, targetBtn);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

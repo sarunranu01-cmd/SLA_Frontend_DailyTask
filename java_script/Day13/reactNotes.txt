@@ -1,0 +1,49 @@
+What is React?
+React is an open-source JavaScript library developed by Facebook and maintained by Meta and the open-source community.
+It is used to build interactive and reusable user interfaces, especially for web applications. React uses a component-based 
+and declarative approach, making applications easier to develop, maintain, and update.
+
+2.Is React a library or framework?
+React is primarily a JavaScript library, not a complete framework.
+It mainly focuses on building user interfaces. For a complete application, developers can combine React with other tools and 
+libraries for routing, data fetching, and build configuration
+
+3. What is a component?
+A component is a reusable piece of UI.In modern React components are commonly JavaScript functions that return JSX.
+
+4. Why are Components Important?
+Components are important because they help developers divide a large application into smaller, manageable, and reusable parts.
+The main benefits of components:
+Reusability: 
+	A component can be created once and used multiple times.
+Maintainability:
+	Individual components are easier to update fix and manage.
+Readability:
+	Components make the application structure easier to understand.
+Separation of concerns: 
+	Each component can handle its own UI and related logic.
+Easier testing:
+	Smaller components are easier to test and debug.
+5.What is JSX?
+	JSX stands for JavaScript XML.
+	It is a syntax extension commonly used with React that allows developers to write HTML-like markup inside JavaScript.
+	
+6.What is Virtual DOM?
+	Virtual DOM is a common term for React's in-memory representation of the UI.
+	When state changes React renders the component again, creates the next UI representationdetermines the necessary changes
+	and commits the required updates to the browser DOM.
+7.What is the Real DOM?
+The Real DOM Document Object Model is the actual structure of a web page created by the browser from HTML.
+It represents all the elements of a webpage such as headings paragraphs buttons images and forms as objects in a tree-like structure.
+When the webpage is changed the browser updates the Real DOM to reflect those changes.
+
+8.What is Virtual DOM?
+The Virtual DOM is a lightweight inmemory representation of the Real DOM used by React.
+When the UI changes React first updates the Virtual DOM compares it with the previous version and then updates only 
+the necessary parts of the Real DOM.
+9.What is the Real DOM?
+The Real DOM (Document Object Model) is the actual structure of a webpage created and managed by the browser.
+It contains elements such as headings buttons images forms and paragraphs. When the UI changes the browser updates the Real DOM.
+10.What is Reconciliation?
+Reconciliation is the process React uses to compare the previous Virtual DOM with the new Virtual DOM after a change.
+React identifies what has changed and updates only the necessary parts of the Real DOM.
